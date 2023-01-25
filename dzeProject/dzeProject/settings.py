@@ -23,7 +23,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-^&9vl9k+ifs($$wro64+7i=i*kgnvmojie3dwhj%1+vk)-pf+@'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['ShwMe1NiLRepeat.pythonanywhere.com']
 
@@ -129,3 +129,8 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'dzeApp/static'),
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+try:
+    from .local_settings import *
+except ImportError:
+    print('Looks like no local file')
