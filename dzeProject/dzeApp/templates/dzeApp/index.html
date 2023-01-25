@@ -2,10 +2,9 @@
 <html lang="ru">
 {% load static %}
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
-
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
@@ -67,11 +66,11 @@
       <h1>Леванидзе Анна Сергеевна</h1>
       <p>Я являюсь <span class="typed" data-typed-items="Преподователем в ЕЭТК"></span></p>
       <div class="social-links">
-        <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
-        <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
-        <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
-        <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
-        <a href="http://eetk.ru/" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+        <a href="https://t.me/+79221822774" class="telegram"><i class="bx bxl-telegram"></i></a>
+        <a href="https://vk.com/a.levanidze" class="vk"><i class="bx bxl-vk"></i></a>
+        <a href="https://discordapp.com/users/766218054350405642" class="discord"><i class="bx bx bxl-discord"></i></a>
+        <a href="https://wa.me/79221822774" class="whatsapp"><i class="bx bxl-whatsapp"></i></a>
+        <a href="http://eetk.ru/" class="linkedin"><i class="bx bxs-briefcase"></i></a>
       </div>
     </div>
   </section><!-- End Hero -->
@@ -698,7 +697,8 @@
 
           <div class="col-lg-8 mt-5 mt-lg-0">
 
-            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+            <form action="{% url 'send_email' %}" method="post" id="email-form" >
+                  {% csrf_token %}
               <div class="row">
                 <div class="col-md-6 form-group">
                   <input type="text" name="name" class="form-control" id="name" placeholder="Ваше имя" required>
@@ -714,12 +714,11 @@
                 <textarea class="form-control" name="message" rows="5" placeholder="Сообщение" required></textarea>
               </div>
               <div class="my-3">
-                <div class="loading">Loading</div>
-                <div class="error-message"></div>
-                <div class="sent-message">Your message has been sent. Thank you!</div>
               </div>
-              <div class="text-center"><button type="submit" >Отправить сообщение</button></div>
+              <div class="text-center"><button type="submit" class="btn btn-primary " id="send-email-btn" >Отправить сообщение</button></div>
+
             </form>
+              <div id="message"></div>
 
           </div>
 
@@ -736,11 +735,11 @@
       <h3>Леванидзе Анна Сергеевна</h3>
       <p></p>
       <div class="social-links">
-        <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
-        <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
-        <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
-        <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
-        <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+       <a href="https://t.me/+79221822774" class="telegram"><i class="bx bxl-telegram"></i></a>
+        <a href="https://vk.com/a.levanidze" class="vk"><i class="bx bxl-vk"></i></a>
+        <a href="https://discordapp.com/users/766218054350405642" class="discord"><i class="bx bx bxl-discord"></i></a>
+        <a href="https://wa.me/79221822774" class="whatsapp"><i class="bx bxl-whatsapp"></i></a>
+        <a href="http://eetk.ru/" class="linkedin"><i class="bx bxs-briefcase"></i></a>
       </div>
     </div>
   </footer><!-- End Footer -->
