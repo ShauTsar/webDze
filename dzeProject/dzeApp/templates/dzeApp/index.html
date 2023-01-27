@@ -64,7 +64,7 @@
   <section id="hero" class="d-flex flex-column justify-content-center">
     <div class="container" data-aos="zoom-in" data-aos-delay="100">
       <h1>Леванидзе Анна Сергеевна</h1>
-      <p>Я являюсь <span class="typed" data-typed-items="Преподователем в ЕЭТК"></span></p>
+      <p>Я являюсь <span class="typed" data-typed-items='Преподователем ГАПОУ СО "ЕЭТК"'></span></p>
       <div class="social-links">
         <a href="https://t.me/+79221822774" class="telegram"><i class="bx bxl-telegram"></i></a>
         <a href="https://vk.com/a.levanidze" class="vk"><i class="bx bxl-vk"></i></a>
@@ -250,6 +250,7 @@
       </div>
     </section><!-- End Skills Section -->
 
+
     <!-- ======= Resume Section ======= -->
     <section id="resume" class="resume">
       <div class="container" data-aos="fade-up">
@@ -322,6 +323,21 @@
 
       </div>
     </section><!-- End Resume Section -->
+    <section id="servicesTest" class="services">
+      <div class="container" data-aos="fade-up">
+        <div class="section-title">
+          <h2>Методические материалы</h2>
+        </div>
+        <div>
+          <ul>
+            <li><a href="https://docs.google.com/document/d/1e3zVstDGTeuWtKmU1-Rlp4GZw6Yy0lcr/edit?usp=share_link&ouid=116190217350821012787&rtpof=true&sd=true">ОП 04 Основы Алгоритмизациии Программирования</a></li>
+            <li><a href="https://docs.google.com/document/d/1kLi0JDf0RI0TlDnBk4a9PQn-QxLyRg3O/edit?usp=share_link&ouid=116190217350821012787&rtpof=true&sd=true">ПУП 01 Математика</a></li>
+            <li><a href="https://docs.google.com/document/d/18qxrkMVAilltwNdTqM_Yz0bmQG2tZP1c/edit?usp=share_link&ouid=116190217350821012787&rtpof=true&sd=true">ПУП 02 Математика</a></li>
+            <li><a href="https://docs.google.com/document/d/1i2GwdSIvgJByara4IZMiXnrWPooS-H3F/edit?usp=share_link&ouid=116190217350821012787&rtpof=true&sd=true">ЕН 01 Математика</a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
 
     <!-- ======= Portfolio Section ======= -->
     <section id="portfolio" class="portfolio section-bg">
@@ -329,7 +345,6 @@
 
         <div class="section-title">
           <h2>Достижения</h2>
-          <p>Снизу представлены мои грамоты и достижения</p>
         </div>
 
         <div class="row">
@@ -533,7 +548,7 @@
 
         <div class="section-title">
           <h2>Расписание</h2>
-          <p>Ниже вы найдете мое расписание на текущую неделю</p>
+          <p>Здесь вы можете узнать где и во сколько меня можно найти</p>
         </div>
 
         <div class="row">
@@ -621,17 +636,7 @@
 
       </div>
     </section><!-- End Services Section -->
-    <section id="servicesЕуые" class="services">
-      <div class="container" data-aos="fade-up">
 
-        <div class="section-title">
-          <h2>Расписание</h2>
-          <p>Ниже вы найдете мое расписание на текущую неделю</p>
-        </div>
-
-
-      </div>
-    </section>
 
 
     <!-- ======= Testimonials Section ======= -->
@@ -753,7 +758,7 @@
 
           <div class="col-lg-8 mt-5 mt-lg-0">
 
-            <form action="{% url 'send_email' %}" method="post" id="email-form" >
+            <form action="{% url 'send_email' %}" method="post" id="email-form" enctype="multipart/form-data" >
                   {% csrf_token %}
               <div class="row">
                 <div class="col-md-6 form-group">
@@ -767,12 +772,14 @@
                 <input type="text" class="form-control" name="subject" id="subject" placeholder="Тема" required>
               </div>
               <div class="form-group mt-3">
-                <textarea class="form-control" name="message" rows="5" placeholder="Сообщение" required></textarea>
+                <textarea class="form-control" name="message" rows="5" placeholder="Напишите здесь свое сообщение, вы также можете прикрепить файл" required> </textarea>
+                <label class="btn btn-primary">
+                Прикрепить файл <input type="file" hidden>
+                </label>
               </div>
               <div class="my-3">
               </div>
               <div class="text-center"><button type="submit" class="btn btn-primary " id="send-email-btn" >Отправить сообщение</button></div>
-
             </form>
               <div id="message"></div>
 

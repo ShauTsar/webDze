@@ -10,4 +10,5 @@ urlpatterns = [
     path('success/', views.success, name='success'),
     path('send_email', views.send_email, name='send_email'),
 
+
 ]
