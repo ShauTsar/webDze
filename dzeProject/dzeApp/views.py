@@ -1,13 +1,9 @@
 import datetime
-import os
 
-from django.core.files.base import ContentFile
-from django.core.files.storage import default_storage
-from django.http import HttpResponse, JsonResponse, FileResponse, Http404
+from django.http import HttpResponse
 from django.shortcuts import render, redirect
 from django.core.mail import EmailMessage, send_mail
 from django.conf import settings
-import asyncio
 from django.views.decorators.csrf import csrf_exempt
 
 
