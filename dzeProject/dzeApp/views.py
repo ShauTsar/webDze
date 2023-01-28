@@ -9,11 +9,15 @@ from django.core.mail import EmailMessage, send_mail
 from django.conf import settings
 import asyncio
 from django.views.decorators.csrf import csrf_exempt
+
+
 def index(request):
     dateStartJob = datetime.date(2020, 8, 26)
     days = datetime.date.today() - dateStartJob
     daysToday = days.days
-    context = {'daysToday': daysToday}
+    hoursInJob = int(daysToday * 2.1)
+    consultHours = int(14*8*2.5)
+    context = {'daysToday': daysToday, 'hoursInJob': hoursInJob, 'consultHours': consultHours}
 
     return render(request, 'dzeApp/index.html', context)
 
@@ -38,7 +42,8 @@ def send_email(request):
             return redirect('success')
         else:
             try:
-                send_mail(subject, f'{message}\n Письмо от {name}\n Почта отправителя {email}', settings.EMAIL_HOST_USER,
+                send_mail(subject, f'{message}\n Письмо от {name}\n Почта отправителя {email}',
+                          settings.EMAIL_HOST_USER,
                           ['levanidzeanna@gmail.com'], fail_silently=False)
                 return redirect('success')
             except Exception as e:
