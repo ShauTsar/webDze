@@ -34,7 +34,6 @@ def send_email(request):
             email = EmailMessage(
                 subject, f'{message}\n Письмо от {name}\n Почта отправителя {email}',
                 settings.EMAIL_HOST_USER, ['levanidzeanna@gmail.com'],
-                [email],
                 headers={'Reply-To': email}
             )
             email.attach(attach.name, attach.read(), attach.content_type)
