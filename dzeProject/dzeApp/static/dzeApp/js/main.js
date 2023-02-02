@@ -1,9 +1,3 @@
-/**
-* Template Name: MyResume - v4.10.0
-* Template URL: https://bootstrapmade.com/free-html-bootstrap-template-my-resume/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
 (function() {
   "use strict";
 
@@ -267,3 +261,81 @@
   new PureCounter();
 
 })()
+var currentHomeworkTab = document.querySelector('.current-homework-tab');
+var pastHomeworkTab = document.querySelector('.past-homework-tab');
+var currentHomeworkContent = document.querySelector('.current-homework-content');
+var pastHomeworkContent = document.querySelector('.past-homework-content');
+
+currentHomeworkTab.addEventListener('click', function() {
+  currentHomeworkContent.style.display = 'block';
+  pastHomeworkContent.style.display = 'none';
+
+  currentHomeworkTab.classList.add('active');
+  pastHomeworkTab.classList.remove('active');
+});
+
+pastHomeworkTab.addEventListener('click', function() {
+  currentHomeworkContent.style.display = 'none';
+  pastHomeworkContent.style.display = 'block';
+
+  currentHomeworkTab.classList.remove('active');
+  pastHomeworkTab.classList.add('active');
+});
+
+// Show the current homework content when the page loads
+currentHomeworkContent.style.display = 'block';
+//Btn Registration
+
+
+
+$(document).ready(function() {
+  $('.modal-tabs .past-homework-tab').click(function() {
+    $('.modal-tabs .past-homework-tab').addClass('active');
+    $('.modal-tabs .current-homework-tab').removeClass('active');
+    $('.modal-body .past-homework-content').show();
+    $('.modal-body .current-homework-content').hide();
+  });
+
+  $('.modal-tabs .current-homework-tab').click(function() {
+    $('.modal-tabs .past-homework-tab').removeClass('active');
+    $('.modal-tabs .current-homework-tab').addClass('active');
+    $('.modal-body .past-homework-content').hide();
+    $('.modal-body .current-homework-content').show();
+  });
+});
+$(document).ready(function(){
+  $("#regBtn").click(function(){
+    $("#registerModal").modal("show");
+  });
+});
+//Reg data send
+$("#register-form").submit(function(event) {
+  event.preventDefault();
+ var formData = {
+    "first_name": $("input[name=first_name]").val(),
+    "last_name": $("input[name=last_name]").val(),
+    "group": $("select[name=group]").val(),
+    "username": $("input[name=username]").val(),
+    "password": $("input[name=password1]").val()
+  };
+
+   $.ajax({
+    type: "POST",
+    url: "/register/",
+    data: formData,
+    dataType: 'json',
+    success: function(data) {
+      if (data.status === 'success') {
+        alert('Успешная регистрация!');
+        $("#registerModal").modal("hide");
+      } else {
+        alert('Ошибка регистрации!');
+      }
+    }
+  });
+});
+$("#already-have-account").click(function() {
+  $("#register-modal").modal("hide");
+  $("#login-modal").modal("show");
+});
+

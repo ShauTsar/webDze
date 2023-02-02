@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+<head>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</head>
+<body>
+<div class="container">
+    <h2>Форма регистрации студента</h2>
+    <form action="/register/" method="post">
+        {% csrf_token %}
+      <div class="form-group">
+        <label for="first_name">Имя:</label>
+        <input type="text" class="form-control" id="first_name" name="first_name" required>  <!-- change here -->
+      </div>
+      <div class="form-group">
+        <label for="last_name">Фамилия:</label>
+        <input type="text" class="form-control" id="last_name" name="last_name" required>  <!-- change here -->
+      </div>
+      <div class="form-group">
+        <label for="group">Группа:</label>
+        <select class="form-control" id="group" name="group" required>  <!-- change here -->
+          <option>145-ХК</option>
+          <option>147-ПСА</option>
+          <option>149-ПОД</option>
+          <option>232-Б</option>
+          <option>243-ИСП СИС</option>
+          <option>244-ИСП-СИС</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="username" >Логин:</label>
+        <input type="text" class="form-control" id="username" name="username" required>  <!-- change here -->
+      </div>
+      <div class="form-group">
+        <label for="pwd">Пароль:</label>
+        <input type="password" class="form-control" id="pwd" name="password1" required>  <!-- change here -->
+      </div>
+        <button type="submit" class="btn btn-dark float-right">Зарегистрироваться</button>
+    </form>
+              <button class="btn btn-primary float-right mr-4" href="">Уже зарегистрирован</button>
+  </div>
+</body>
+</html>
+  <link href="{% static 'dzeApp/css/regStyle.scss' %}" rel="stylesheet">

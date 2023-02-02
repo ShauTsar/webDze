@@ -3,11 +3,12 @@
 {% load static %}
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
 
 <head>
-  <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="../../static/dzeApp/css/style.css"/>
+    <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <title>Леванидзе Анна Сергеевна</title>
   <meta content="" name="description">
@@ -54,6 +55,7 @@
         <li><a href="#resume" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>Библиотека</span></a></li>
         <li><a href="#portfolio" class="nav-link scrollto"><i class="bx bx-book-content"></i> <span>Достижения</span></a></li>
         <li><a href="#services" class="nav-link scrollto"><i class="bx bx-server"></i> <span>Расписание</span></a></li>
+        <li><a href="#homeworks" class="nav-link scrollto"><i class='bx bx-task'></i> <span>Домашнее задание</span></a></li>
         <li><a href="#contact" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span>Связаться</span></a></li>
       </ul>
     </nav><!-- .nav-menu -->
@@ -76,6 +78,103 @@
   </section><!-- End Hero -->
 
   <main id="main">
+
+
+<!-- Top buttons start -->
+      <div class="top-buttons">
+          <button class="btn btn-secondary btn-sm" data-toggle="modal" data-target="#registerModal" id="regBtn">
+  <i class="glyphicon glyphicon-user"></i> Зарегистрироваться
+</button>
+          <button class="btn btn-secondary btn-sm" data-toggle="modal" data-target="#loginModal">
+                   <i class="glyphicon glyphicon-log-in"></i> Войти
+          </button>
+      </div>
+<!-- Top buttons end -->
+
+ <!-- Modal Registration button -->
+      <div class="modal fade" id="registerModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+<div class="modal-header">
+  <h5 class="modal-title" id="exampleModalLabel">Регистрация</h5>
+  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+<div class="modal-body">
+<div class="container">
+    <h2>Форма регистрации студента</h2>
+<form id="register-form" method="post" action="{% url 'register' %}">
+  {% csrf_token %}
+  <div class="form-group">
+    <label for="first_name">Имя:</label>
+    <input type="text" class="form-control" id="first_name" name="first_name" required>
+  </div>
+  <div class="form-group">
+    <label for="last_name">Фамилия:</label>
+    <input type="text" class="form-control" id="last_name" name="last_name" required>
+  </div>
+  <div class="form-group">
+    <label for="group">Группа:</label>
+    <select class="form-control" id="group" name="group" required>
+      <option>145-ХК</option>
+      <option>147-ПСА</option>
+      <option>149-ПОД</option>
+      <option>232-Б</option>
+      <option>243-ИСП СИС</option>
+      <option>244-ИСП-СИС</option>
+    </select>
+  </div>
+  <div class="form-group">
+    <label for="username">Логин:</label>
+    <input type="text" class="form-control" id="username" name="username" required>
+  </div>
+  <div class="form-group">
+    <label for="pwd">Пароль:</label>
+    <input type="password" class="form-control" id="pwd" name="password1" required>
+  </div>
+  <button type="submit" class="btn btn-dark float-right">Зарегистрироваться</button>
+</form>
+              <button type="button" class="btn btn-primary float-right mr-4" onclick="$('#registerModal').modal('hide');$('#loginModal').modal('show');">Уже зарегистрирован</button>
+
+  </div>
+</div>
+
+    </div>
+  </div>
+</div>
+      <!-- ======= Login Modal ======= -->
+       <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+<div class="modal-header">
+  <h5 class="modal-title" id="exampleModalLabel">Вход</h5>
+  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+<div class="modal-body">
+<div class="container">
+<form id="login-form" method="post">
+  {% csrf_token %}
+  <div class="form-group">
+    <label for="username">Логин:</label>
+    <input type="text" class="form-control" id="usernameLog" name="usernameLog" required>
+  </div>
+  <div class="form-group">
+    <label for="pwd">Пароль:</label>
+    <input type="password" class="form-control" id="pwdLog" name="passwordLog" required>
+  </div>
+  <button type="submit" class="btn btn-dark float-right">Войти</button>
+</form>
+
+
+  </div>
+</div>
+
+    </div>
+  </div>
+</div>
 
     <!-- ======= About Section ======= -->
     <section id="about" class="about">
@@ -663,7 +762,7 @@
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 align-items-stretch " data-aos="zoom-in" data-aos-delay="300" data-toggle="modal" data-target="#modal-saturday">
+          <div class="col-lg-4 col-md-6 align-items-stretch mt-4 " data-aos="zoom-in" data-aos-delay="300" data-toggle="modal" data-target="#modal-saturday">
             <div class="icon-box iconbox-teal">
               <div class="icon">
                 <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
@@ -680,6 +779,192 @@
 
       </div>
     </section><!-- End Services Section -->
+      <section id="homeworks" class="homeworks">
+  <div class="container" data-aos="fade-up">
+    <div class="section-title">
+      <h2>Домашнее задание</h2>
+      <p>Студенты могут просмотреть домашнее задание</p>
+    </div>
+      <div class="homework-container">
+
+    <div class="homework-group group145" data-toggle="modal" data-target="#group145Modal">
+      <h3>145-ХК</h3>
+    </div>
+
+    <div class="homework-group group147" data-toggle="modal" data-target="#group147Modal">
+      <h3>147-ПСА</h3>
+    </div>
+      <div class="homework-group group149" data-toggle="modal" data-target="#group149Modal">
+      <h3>149-ПОД</h3>
+    </div>
+      <div class="homework-group group232" data-toggle="modal" data-target="#group232Modal" >
+      <h3>232-Б</h3>
+    </div>
+      <div class="homework-group group243" data-toggle="modal" data-target="#group243Modal">
+      <h3>243-ИСП СИС</h3>
+    </div>
+                <div class="homework-group group244" data-toggle="modal" data-target="#group244Modal">
+      <h3>244-ИСП-СИС</h3>
+    </div>
+          </div>
+  </div>
+          <!-- Modal for 145-ХК -->
+<div class="modal fade " id="group145Modal" tabindex="-1" role="dialog" aria-labelledby="group145ModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content ">
+      <div class="modal-header">
+        <h5 class="modal-title" id="group145ModalLabel">145-ХК</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-tabs">
+        <button class="past-homework-tab">Прошлое</button>
+        <button class="current-homework-tab active">Текущее</button>
+      </div>
+      <div class="modal-body">
+        <div class="past-homework-content">
+          <p>№1065, 1067 стр. 322, Алимов Ш. А. Алгебра</p>
+        </div>
+          <div class="current-homework-content">
+         <p> №1076, 1077 стр. 326, Алимов Ш. А. Алгебра</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+       <!-- Modal for 147-ПСА -->
+<div class="modal fade" id="group147Modal" tabindex="-1" role="dialog" aria-labelledby="group147ModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="group147ModalLabel">147-ПСА</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-tabs">
+        <button class="past-homework-tab">Прошлое</button>
+        <button class="current-homework-tab active">Текущее</button>
+      </div>
+      <div class="modal-body">
+        <div class="past-homework-content">
+          <p></p>
+        </div>
+        <div class="current-homework-content">
+          <p></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+           <!-- Modal for 149-ПОД -->
+    <div class="modal fade" id="group149Modal" tabindex="-1" role="dialog" aria-labelledby="group149ModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="group149ModalLabel">149-ПОД</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-tabs">
+        <button class="past-homework-tab">Прошлое</button>
+        <button class="current-homework-tab active">Текущее</button>
+      </div>
+      <div class="modal-body">
+        <div class="past-homework-content">
+          <p>Значок номер1219, 1220 стр.384, Алимов Ш. А. Алгебра</p>
+        </div>
+          <div class="current-homework-content">
+         <p>Текущее №793 стр. 238, №833-835(2,4) стр.249, Алимов Ш. А. Алгебра</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+           <!-- Modal for 232-Б -->
+    <div class="modal fade" id="group232Modal" tabindex="-1" role="dialog" aria-labelledby="group232ModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="group232ModalLabel">232-Б</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+      <div class="modal-tabs">
+        <button class="past-homework-tab">Прошлое</button>
+        <button class="current-homework-tab active">Текущее</button>
+      </div>
+      <div class="modal-body">
+        <div class="past-homework-content">
+          <p></p>
+        </div>
+        <div class="current-homework-content">
+          <p></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+           <!-- Modal for 243-ИСП СИС -->
+    <div class="modal fade" id="group243Modal" tabindex="-1" role="dialog" aria-labelledby="group243ModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="group243ModalLabel">243-ИСП СИС</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+      <div class="modal-tabs">
+        <button class="past-homework-tab">Прошлое</button>
+        <button class="current-homework-tab active">Текущее</button>
+      </div>
+      <div class="modal-body">
+        <div class="past-homework-content">
+          <p></p>
+        </div>
+        <div class="current-homework-content">
+          <p></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+           <!-- Modal for 244-ИСП СИС -->
+    <div class="modal fade" id="group244Modal" tabindex="-1" role="dialog" aria-labelledby="group244ModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="group244ModalLabel">244-ИСП СИС</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+      <div class="modal-tabs">
+        <button class="past-homework-tab">Прошлое</button>
+        <button class="current-homework-tab active">Текущее</button>
+      </div>
+      <div class="modal-body">
+        <div class="past-homework-content">
+          <p></p>
+        </div>
+        <div class="current-homework-content">
+          <p></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+
+
+
 
 
 
@@ -696,12 +981,12 @@
 
             <div class="swiper-slide">
               <div class="testimonial-item">
-                <img src="{% static 'dzeApp/img/testimonials/testimonials-1.jpg' %}" class="testimonial-img" alt="">
-                <h3>Грибоедов александр</h3>
-                <h4>3 курс ОСА</h4>
+                <img src="{% static 'dzeApp/img/students/woman.jpg' %}" class="testimonial-img" alt="">
+                <h3>Зверева Ксения Евгеньевна</h3>
+                <h4>234-ПСО</h4>
                 <p>
                   <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                  Анна Сергеевна замечательный человек и преподаватель.
+                  Самый лучший преподаватель, поддержит любую (даже не самую лучшую) идею студента!!!
                   <i class="bx bxs-quote-alt-right quote-icon-right"></i>
                 </p>
               </div>
@@ -709,12 +994,12 @@
 
             <div class="swiper-slide">
               <div class="testimonial-item">
-                <img src="{% static 'dzeApp/img/testimonials/testimonials-2.jpg' %}" class="testimonial-img" alt="">
-                <h3>Тест2</h3>
-                <h4>Тестовый пользователь2</h4>
+                <img src="{% static 'dzeApp/img/students/232b.jpg' %}" class="testimonial-img" alt="">
+                <h3>Кочкина Ксения</h3>
+                <h4>232-Б</h4>
                 <p>
                   <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                  ТЕСТ2ТЕСТ2ТЕСТ2ТЕСТ2ТЕСТ2ТЕСТ2ТЕСТ2ТЕСТ2ТЕСТ2ТЕСТ2ТЕСТ2ТЕСТ2ТЕСТ2ТЕСТ2ТЕСТ2.
+                   С учётом того, что пар у нас прошло не много и ещё не успели до конца познакомиться, могу смело сказать, что Анна Сергеевна хороший и компетентный преподаватель! Материал всегда объясняет доступно и понятно, а если выходишь к доске и запутался в расчетах, то она поможет и объяснит ещё раз.
                   <i class="bx bxs-quote-alt-right quote-icon-right"></i>
                 </p>
               </div>
@@ -722,12 +1007,12 @@
 
             <div class="swiper-slide">
               <div class="testimonial-item">
-                <img src="{% static 'dzeApp/img/testimonials/testimonials-3.jpg' %}" class="testimonial-img" alt="">
-                <h3>Тест3</h3>
-                <h4>Тестовый пользователь3</h4>
+                <img src="{% static 'dzeApp/img/students/aleksey.jpg' %}" class="testimonial-img" alt="">
+                <h3>Алексей</h3>
+                <h4>Студент 234 - ПСО</h4>
                 <p>
                   <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                  ТестТестТестТестТестТестТестТестТестТестТестТестТестТестТестТестТестТестТестТестТестТестТест.
+                  Профессионал своего дела, отличный педагог и замечательный человек..
                   <i class="bx bxs-quote-alt-right quote-icon-right"></i>
                 </p>
               </div>
@@ -735,12 +1020,12 @@
 
             <div class="swiper-slide">
               <div class="testimonial-item">
-                <img src="{% static 'dzeApp/img/testimonials/testimonials-4.jpg' %}" class="testimonial-img" alt="">
-                <h3>Тест4</h3>
-                <h4>Тестовый пользователь4</h4>
+                <img src="{% static 'dzeApp/img/students/marina.jpg' %}" class="testimonial-img" alt="">
+                <h3>Марина</h3>
+                <h4></h4>
                 <p>
                   <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                  ТестТестТестТестТестТестТестТестТестТестТестТестТестТестТестТестТестТестТестТестТестТестТестТестТестТестТестТестТест.
+                  Самый хороший преподаватель, которая очень понятно и доступно объясняет темы
                   <i class="bx bxs-quote-alt-right quote-icon-right"></i>
                 </p>
               </div>
@@ -748,12 +1033,24 @@
 
             <div class="swiper-slide">
               <div class="testimonial-item">
-                <img src="{% static 'dzeApp/img/testimonials/testimonials-5.jpg' %}" class="testimonial-img" alt="">
-                <h3>Тест5</h3>
-                <h4>Тестовый пользователь5</h4>
+                <img src="{% static 'dzeApp/img/students/franke.jpg' %}" class="testimonial-img" alt="">
+                <h3>Вячеслав</h3>
+                <h4>332 ОСА</h4>
                 <p>
                   <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                  ТестТестТестТестТестТестТестТестТестТестТестТестТестТестТестТестТестТестТестТест.
+                  Добрый,понимающий педагог
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+              </div>
+            </div>
+              <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="{% static 'dzeApp/img/students/anna.jpg' %}" class="testimonial-img" alt="">
+                <h3>Бердюгина Анна</h3>
+                <h4>147 ПСА</h4>
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                   Анна Сергеевна отличный преподаватель, все понятно объясняет , иногда шутит!
                   <i class="bx bxs-quote-alt-right quote-icon-right"></i>
                 </p>
               </div>
@@ -762,6 +1059,9 @@
           </div>
           <div class="swiper-pagination"></div>
         </div>
+          <div class="d-flex justify-content-around">
+              <button class="btn btn-primary">Оставить комментарий</button>
+          </div>
 
       </div>
     </section><!-- End Testimonials Section -->
@@ -790,11 +1090,6 @@
                 <p>levanidzeanna@gmail.com</p>
               </div>
 
-              <div class="phone">
-                <i class="bi bi-phone"></i>
-                <h4>Позвонить:</h4>
-                <p>+7 922 182 2774</p>
-              </div>
 
             </div>
 
@@ -823,7 +1118,7 @@
               </div>
               <div class="my-3">
               </div>
-              <div class="text-center"><button type="submit" class="btn btn-primary " id="send-email-btn" >Отправить сообщение</button></div>
+              <div class="text-center"><button type="submit" class="btn btn-primary" id="send-email-btn" >Отправить сообщение</button></div>
             </form>
               <div id="message"></div>
 
@@ -992,21 +1287,6 @@
     </div>
   </div>
               </div>
-
-
-
-
-<!--  <div class="pop_up">-->
-<!--    <div class="pop_up_container">-->
-<!--      <div class="pop_up_body">-->
-<!--        <p></p>-->
-<!--        <form action="">-->
-<!--          <input>-->
-<!--          -->
-<!--        </form>-->
-<!--      </div>-->
-<!--    </div>-->
-<!--  </div>-->
 
 </body>
 </html>

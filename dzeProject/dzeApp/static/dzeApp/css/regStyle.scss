@@ -1,0 +1,47 @@
+body {
+    background-color: #333;
+    color: #ccc;
+}
+
+.container {
+    background-color: #444;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #000;
+}
+
+.form-control {
+    background-color: #555;
+    color: #ccc;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 0 10px #000;
+}
+
+label {
+    color: #ccc;
+}
+
+.btn-dark {
+    background-color: #ccc;
+    color: #333;
+    border: none;
+    border-radius: 5px;
+}
+
+.btn-dark:hover {
+    background-color: #333;
+    color: #ccc;
+}
+
+.btn-primary {
+    background-color: #ccc;
+    color: #333;
+    border: none;
+    border-radius: 5px;
+}
+
+.btn-primary:hover {
+    background-color: #333;
+    color: #ccc;
+}
