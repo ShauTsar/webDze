@@ -308,34 +308,49 @@ $(document).ready(function(){
     $("#registerModal").modal("show");
   });
 });
-//Reg data send
-$("#register-form").submit(function(event) {
-  event.preventDefault();
- var formData = {
-    "first_name": $("input[name=first_name]").val(),
-    "last_name": $("input[name=last_name]").val(),
-    "group": $("select[name=group]").val(),
-    "username": $("input[name=username]").val(),
-    "password": $("input[name=password1]").val()
-  };
-
-   $.ajax({
-    type: "POST",
-    url: "/register/",
-    data: formData,
-    dataType: 'json',
-    success: function(data) {
-      if (data.status === 'success') {
-        alert('Успешная регистрация!');
-        $("#registerModal").modal("hide");
-      } else {
-        alert('Ошибка регистрации!');
+$(document).ready(function() {
+  $('#register-form').submit(function (event) {
+    event.preventDefault();
+    $.ajax({
+      type: 'POST',
+      url: $(this).attr('action'),
+      data: $(this).serialize(),
+      success: function (data) {
+        if (data.success) {
+           $('#registerModal').modal('hide');
+          $('body').removeClass('modal-open');
+          $('.modal-backdrop').remove();
+        } else {
+          console.error(data.error);
+          console.log(data);
+        }
+      },
+      error: function (error) {
       }
-    }
+    });
+  })
+});
+  $('#login-form').submit(function (event) {
+    event.preventDefault();
+    $.ajax({
+      type: 'POST',
+      url: $(this).attr('action'),
+      data: $(this).serialize(),
+      success: function (data) {
+        if (data.success) {
+          window.location.href = '';
+        } else {
+          console.log(data);
+          $('#login-error').text(data.message);
+        }
+      },
+      error: function (jqXHR, textStatus, errorThrown) {
+        console.error('An error occurred while logging in:', errorThrown);
+      }
+    });
   });
-});
-$("#already-have-account").click(function() {
-  $("#register-modal").modal("hide");
-  $("#login-modal").modal("show");
-});
+
+
+
+
 

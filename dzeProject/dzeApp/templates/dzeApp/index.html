@@ -1,1292 +1,1492 @@
 <!DOCTYPE html>
 <html lang="ru">
 {% load static %}
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
 <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
 
 <head>
     <link rel="stylesheet" type="text/css" href="../../static/dzeApp/css/style.css"/>
     <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Леванидзе Анна Сергеевна</title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Леванидзе Анна Сергеевна</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
 
-  <!-- Favicons -->
-  <link href="{% static 'dzeApp/img/logoDze.png' %}" rel="icon">
-  <link href="{% static 'dzeApp/img/apple-touch-icon.png' %}" rel="apple-touch-icon">
+    <!-- Favicons -->
+    <link href="{% static 'dzeApp/img/logoDze.png' %}" rel="icon">
+    <link href="{% static 'dzeApp/img/apple-touch-icon.png' %}" rel="apple-touch-icon">
 
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+          rel="stylesheet">
 
-  <!-- Vendor CSS Files -->
-  <link href="{% static 'dzeApp/vendor/aos/aos.css' %}" rel="stylesheet">
-  <link href="{% static 'dzeApp/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
-  <link href="{% static 'dzeApp/vendor/bootstrap-icons/bootstrap-icons.css' %}" rel="stylesheet">
-  <link href="{% static 'dzeApp/vendor/boxicons/css/boxicons.min.css' %}" rel="stylesheet">
-  <link href="{% static 'dzeApp/vendor/glightbox/css/glightbox.min.css' %}" rel="stylesheet">
-  <link href="{% static 'dzeApp/vendor/swiper/swiper-bundle.min.css' %}" rel="stylesheet">
+    <!-- Vendor CSS Files -->
+    <link href="{% static 'dzeApp/vendor/aos/aos.css' %}" rel="stylesheet">
+    <link href="{% static 'dzeApp/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+    <link href="{% static 'dzeApp/vendor/bootstrap-icons/bootstrap-icons.css' %}" rel="stylesheet">
+    <link href="{% static 'dzeApp/vendor/boxicons/css/boxicons.min.css' %}" rel="stylesheet">
+    <link href="{% static 'dzeApp/vendor/glightbox/css/glightbox.min.css' %}" rel="stylesheet">
+    <link href="{% static 'dzeApp/vendor/swiper/swiper-bundle.min.css' %}" rel="stylesheet">
 
-  <!-- Template Main CSS File -->
-  <link href="{% static 'dzeApp/css/style.css' %}" rel="stylesheet">
+    <!-- Template Main CSS File -->
+    <link href="{% static 'dzeApp/css/style.css' %}" rel="stylesheet">
 
-  <!-- =======================================================
-  * Template Name: MyResume - v4.10.0
-  * Template URL: https://bootstrapmade.com/free-html-bootstrap-template-my-resume/
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
+    <!-- =======================================================
+    * Template Name: MyResume - v4.10.0
+    * Template URL: https://bootstrapmade.com/free-html-bootstrap-template-my-resume/
+    * Author: BootstrapMade.com
+    * License: https://bootstrapmade.com/license/
+    ======================================================== -->
 </head>
 
 <body>
 
-  <!-- ======= Mobile nav toggle button ======= -->
-  <!-- <button type="button" class="mobile-nav-toggle d-xl-none"><i class="bi bi-list mobile-nav-toggle"></i></button> -->
-  <i class="bi bi-list mobile-nav-toggle d-lg-none"></i>
-  <!-- ======= Header ======= -->
-  <header id="header" class="d-flex flex-column justify-content-center">
+<!-- ======= Mobile nav toggle button ======= -->
+<!-- <button type="button" class="mobile-nav-toggle d-xl-none"><i class="bi bi-list mobile-nav-toggle"></i></button> -->
+<i class="bi bi-list mobile-nav-toggle d-lg-none"></i>
+<!-- ======= Header ======= -->
+<header id="header" class="d-flex flex-column justify-content-center">
 
     <nav id="navbar" class="navbar nav-menu">
-      <ul>
-        <li><a href="#hero" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>Начальная страцина</span></a></li>
-        <li><a href="#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span>Обо мне</span></a></li>
-        <li><a href="#resume" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>Библиотека</span></a></li>
-        <li><a href="#portfolio" class="nav-link scrollto"><i class="bx bx-book-content"></i> <span>Достижения</span></a></li>
-        <li><a href="#services" class="nav-link scrollto"><i class="bx bx-server"></i> <span>Расписание</span></a></li>
-        <li><a href="#homeworks" class="nav-link scrollto"><i class='bx bx-task'></i> <span>Домашнее задание</span></a></li>
-        <li><a href="#contact" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span>Связаться</span></a></li>
-      </ul>
+        <ul>
+            <li><a href="#hero" class="nav-link scrollto active"><i class="bx bx-home"></i>
+                <span>Начальная страцина</span></a></li>
+            <li><a href="#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span>Обо мне</span></a></li>
+            <li><a href="#resume" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>Библиотека</span></a>
+            </li>
+            <li><a href="#portfolio" class="nav-link scrollto"><i class="bx bx-book-content"></i>
+                <span>Достижения</span></a></li>
+            <li><a href="#services" class="nav-link scrollto"><i class="bx bx-server"></i> <span>Расписание</span></a>
+            </li>
+            <li><a href="#homeworks" class="nav-link scrollto"><i class='bx bx-task'></i> <span>Домашнее задание</span></a>
+            </li>
+            <li><a href="#contact" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span>Связаться</span></a>
+            </li>
+        </ul>
     </nav><!-- .nav-menu -->
 
-  </header><!-- End Header -->
+</header><!-- End Header -->
 
-  <!-- ======= Hero Section ======= -->
-  <section id="hero" class="d-flex flex-column justify-content-center">
+<!-- ======= Hero Section ======= -->
+<section id="hero" class="d-flex flex-column justify-content-center">
     <div class="container" data-aos="zoom-in" data-aos-delay="100">
-      <h1>Леванидзе Анна Сергеевна</h1>
-      <p>Я являюсь <span class="typed" data-typed-items='Преподователем ГАПОУ СО "ЕЭТК"'></span></p>
-      <div class="social-links">
-        <a href="https://t.me/+79221822774" class="telegram"><i class="bx bxl-telegram"></i></a>
-        <a href="https://vk.com/a.levanidze" class="vk"><i class="bx bxl-vk"></i></a>
-        <a href="https://discordapp.com/users/766218054350405642" class="discord"><i class="bx bx bxl-discord"></i></a>
-        <a href="https://wa.me/79221822774" class="whatsapp"><i class="bx bxl-whatsapp"></i></a>
-        <a href="http://eetk.ru/" class="linkedin"><i class="bx bxs-briefcase"></i></a>
-      </div>
+        <h1>Леванидзе Анна Сергеевна</h1>
+        <p>Я являюсь <span class="typed" data-typed-items='Преподователем ГАПОУ СО "ЕЭТК"'></span></p>
+        <div class="social-links">
+            <a href="https://t.me/+79221822774" class="telegram"><i class="bx bxl-telegram"></i></a>
+            <a href="https://vk.com/a.levanidze" class="vk"><i class="bx bxl-vk"></i></a>
+            <a href="https://discordapp.com/users/766218054350405642" class="discord"><i class="bx bx bxl-discord"></i></a>
+            <a href="https://wa.me/79221822774" class="whatsapp"><i class="bx bxl-whatsapp"></i></a>
+            <a href="http://eetk.ru/" class="linkedin"><i class="bx bxs-briefcase"></i></a>
+        </div>
     </div>
-  </section><!-- End Hero -->
+</section><!-- End Hero -->
 
-  <main id="main">
+<main id="main">
+
+    {% if is_authenticated %}
+        <!-- Top buttons start -->
+        <div class="top-buttons">
+
+            <form action="{% url 'logout' %}" method="post">
+                {% csrf_token %}
+                <button class="btn btn-secondary btn-sm" id="logoutBtn" type="submit">
+                    <i class="glyphicon glyphicon-user"></i> Выйти
+                </button>
+            </form>
+        </div>
+        <!-- Top buttons end -->
+    {% else %}
+
+        <div class="top-buttons">
+            <button class="btn btn-secondary btn-sm" data-toggle="modal" data-target="#registerModal" id="regBtn">
+                <i class="glyphicon glyphicon-user"></i> Зарегистрироваться
+            </button>
+            <button class="btn btn-secondary btn-sm" data-toggle="modal" data-target="#loginModal">
+                <i class="glyphicon glyphicon-log-in"></i> Войти
+            </button>
+        </div>
+    {% endif %}
 
 
-<!-- Top buttons start -->
-      <div class="top-buttons">
-          <button class="btn btn-secondary btn-sm" data-toggle="modal" data-target="#registerModal" id="regBtn">
-  <i class="glyphicon glyphicon-user"></i> Зарегистрироваться
-</button>
-          <button class="btn btn-secondary btn-sm" data-toggle="modal" data-target="#loginModal">
-                   <i class="glyphicon glyphicon-log-in"></i> Войти
-          </button>
-      </div>
-<!-- Top buttons end -->
+    <!-- Modal Registration button -->
+    <div class="modal fade" id="registerModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+         aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Регистрация</h5>
+                </div>
+                <div class="modal-body">
+                    <div class="container">
+                        <h2>Форма регистрации студента</h2>
+                        <form id="register-form" method="post" action="{% url 'register' %}">
+                            {% csrf_token %}
+                            <div class="form-group">
+                                <label for="first_name">Имя:</label>
+                                <input type="text" class="form-control" id="first_name" name="first_name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="last_name">Фамилия:</label>
+                                <input type="text" class="form-control" id="last_name" name="last_name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="group">Группа:</label>
+                                <select class="form-control" id="group" name="group" required>
+                                    <option>145-ХК</option>
+                                    <option>147-ПСА</option>
+                                    <option>149-ПОД</option>
+                                    <option>232-Б</option>
+                                    <option>243-ИСП СИС</option>
+                                    <option>244-ИСП-СИС</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="usernameLog">Логин:</label>
+                                <input type="text" class="form-control" id="usernameReg" name="usernameReg" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="pwd">Пароль:</label>
+                                <input type="password" class="form-control" id="pwd" name="password1" required>
+                            </div>
+                            <button type="submit" class="btn btn-dark float-right">Зарегистрироваться</button>
+                        </form>
+                    </div>
+                </div>
 
- <!-- Modal Registration button -->
-      <div class="modal fade" id="registerModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered" role="document">
-    <div class="modal-content">
-<div class="modal-header">
-  <h5 class="modal-title" id="exampleModalLabel">Регистрация</h5>
-  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-    <span aria-hidden="true">&times;</span>
-  </button>
-</div>
-<div class="modal-body">
-<div class="container">
-    <h2>Форма регистрации студента</h2>
-<form id="register-form" method="post" action="{% url 'register' %}">
-  {% csrf_token %}
-  <div class="form-group">
-    <label for="first_name">Имя:</label>
-    <input type="text" class="form-control" id="first_name" name="first_name" required>
-  </div>
-  <div class="form-group">
-    <label for="last_name">Фамилия:</label>
-    <input type="text" class="form-control" id="last_name" name="last_name" required>
-  </div>
-  <div class="form-group">
-    <label for="group">Группа:</label>
-    <select class="form-control" id="group" name="group" required>
-      <option>145-ХК</option>
-      <option>147-ПСА</option>
-      <option>149-ПОД</option>
-      <option>232-Б</option>
-      <option>243-ИСП СИС</option>
-      <option>244-ИСП-СИС</option>
-    </select>
-  </div>
-  <div class="form-group">
-    <label for="username">Логин:</label>
-    <input type="text" class="form-control" id="username" name="username" required>
-  </div>
-  <div class="form-group">
-    <label for="pwd">Пароль:</label>
-    <input type="password" class="form-control" id="pwd" name="password1" required>
-  </div>
-  <button type="submit" class="btn btn-dark float-right">Зарегистрироваться</button>
-</form>
-              <button type="button" class="btn btn-primary float-right mr-4" onclick="$('#registerModal').modal('hide');$('#loginModal').modal('show');">Уже зарегистрирован</button>
-
-  </div>
-</div>
-
+            </div>
+        </div>
     </div>
-  </div>
-</div>
-      <!-- ======= Login Modal ======= -->
-       <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered" role="document">
-    <div class="modal-content">
-<div class="modal-header">
-  <h5 class="modal-title" id="exampleModalLabel">Вход</h5>
-  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-    <span aria-hidden="true">&times;</span>
-  </button>
-</div>
-<div class="modal-body">
-<div class="container">
-<form id="login-form" method="post">
-  {% csrf_token %}
-  <div class="form-group">
-    <label for="username">Логин:</label>
-    <input type="text" class="form-control" id="usernameLog" name="usernameLog" required>
-  </div>
-  <div class="form-group">
-    <label for="pwd">Пароль:</label>
-    <input type="password" class="form-control" id="pwdLog" name="passwordLog" required>
-  </div>
-  <button type="submit" class="btn btn-dark float-right">Войти</button>
-</form>
+    <!-- ======= Login Modal ======= -->
+    <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+         aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Вход</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="container">
+                        <form id="login-form" action="{% url 'login' %}" method="post">
+                            {% csrf_token %}
+                            <div class="form-group">
+                                <label for="usernameReg">Логин:</label>
+                                <input type="text" id="usernameLog" name="usernameLog">
+                            </div>
+                            <div class="form-group">
+                                <label for="password">Пароль</label>
+                                <input type="password" id="password" name="password">
+                            </div>
+                            <button type="submit" class="btn btn-dark float-right">Войти</button>
+                        </form>
 
-
-  </div>
-</div>
-
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-  </div>
-</div>
 
     <!-- ======= About Section ======= -->
     <section id="about" class="about">
-      <div class="container" data-aos="fade-up">
+        <div class="container" data-aos="fade-up">
 
-        <div class="section-title" >
-          <h2>Обо мне</h2>
-          <p>К преподаванию я пришла не сразу, в 2017 окончила УрГПУ по направлению "Прикладная математика и информатика". На последнем курсе университета, по результатам iq тестирования была приглашена в телекоммуникационную компанию "К Телеком" и начала работать бизнес-аналитиком. В 2020 году решила устроиться преподавателем и поняла, что это мое призвание.</p>
-        </div>
+            <div class="section-title">
+                <h2>Обо мне</h2>
+                <p>К преподаванию я пришла не сразу, в 2017 окончила УрГПУ по направлению "Прикладная математика и
+                    информатика". На последнем курсе университета, по результатам iq тестирования была приглашена в
+                    телекоммуникационную компанию "К Телеком" и начала работать бизнес-аналитиком. В 2020 году решила
+                    устроиться преподавателем и поняла, что это мое призвание.</p>
+            </div>
 
-        <div class="row">
-          <div class="col-lg-4">
-            <img src="{% static 'dzeApp/img/dzeProfile.jpg' %}" class="img-fluid" alt="">
-          </div>
-          <div class="col-lg-8 pt-4 pt-lg-0 content">
-            <h3>Преподаватель и социальный педагог</h3>
-            <p class="fst-italic">
-              Я знаю чему и как учить
-            </p>
             <div class="row">
-              <div class="col-lg-6">
-                <ul>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Образование:</strong> <span>Бакалавр</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Общий стаж:</strong> <span>3 года</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Город:</strong> <span>Екатеринбург</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Возраст:</strong> <span>28</span></li>
-                </ul>
-              </div>
-              <div class="col-lg-6">
-                <ul>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Педагогический стаж:</strong> <span>2 года</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Квалификационная категория:</strong><span>первая</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong> <span>levanidzeanna@gmail.com</span></li>
-                </ul>
-              </div>
+                <div class="col-lg-4">
+                    <img src="{% static 'dzeApp/img/dzeProfile.jpg' %}" class="img-fluid" alt="">
+                </div>
+                <div class="col-lg-8 pt-4 pt-lg-0 content">
+                    <h3>Преподаватель и социальный педагог</h3>
+                    <p class="fst-italic">
+                        Я знаю чему и как учить
+                    </p>
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <ul>
+                                <li><i class="bi bi-chevron-right"></i> <strong>Образование:</strong>
+                                    <span>Бакалавр</span></li>
+                                <li><i class="bi bi-chevron-right"></i> <strong>Общий стаж:</strong> <span>3 года</span>
+                                </li>
+                                <li><i class="bi bi-chevron-right"></i> <strong>Город:</strong>
+                                    <span>Екатеринбург</span></li>
+                                <li><i class="bi bi-chevron-right"></i> <strong>Возраст:</strong> <span>28</span></li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-6">
+                            <ul>
+                                <li><i class="bi bi-chevron-right"></i> <strong>Педагогический стаж:</strong> <span>2 года</span>
+                                </li>
+                                <li><i class="bi bi-chevron-right"></i> <strong>Квалификационная
+                                    категория:</strong><span>первая</span></li>
+                                <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong> <span>levanidzeanna@gmail.com</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-        </div>
-      </div>
     </section><!-- End About Section -->
 
     <!-- ======= Facts Section ======= -->
     <section id="facts" class="facts">
-      <div class="container" data-aos="fade-up">
-        <div class="section-title">
-          <h2>Факты</h2>
-          <p>Факты обо мне</p>
+        <div class="container" data-aos="fade-up">
+            <div class="section-title">
+                <h2>Факты</h2>
+                <p>Факты обо мне</p>
+            </div>
+
+            <div class="row">
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="count-box">
+                        <i class="bi bi-emoji-smile"></i>
+                        <span data-purecounter-start="0" data-purecounter-end="{{ daysToday }}"
+                              data-purecounter-duration="1" class="purecounter"></span>
+                        <p>Дней в работе</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 mt-5 mt-md-0">
+                    <div class="count-box">
+                        <i class="bi bi-journal-richtext"></i>
+                        <span data-purecounter-start="0" data-purecounter-end="{{ hoursInJob }}"
+                              data-purecounter-duration="1" class="purecounter"></span>
+                        <p>Пары</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 mt-5 mt-lg-0">
+                    <div class="count-box">
+                        <i class="bi bi-headset"></i>
+                        <span data-purecounter-start="0" data-purecounter-end="{{ consultHours }}"
+                              data-purecounter-duration="1" class="purecounter"></span>
+                        <p>Часов консультаций</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 mt-5 mt-lg-0">
+                    <div class="count-box">
+                        <i class="bi bi-award"></i>
+                        <span data-purecounter-start="0" data-purecounter-end="4" data-purecounter-duration="1"
+                              class="purecounter"></span>
+                        <p>Преподавала на всех площадках колледжа</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mt-5 mt-lg-0">
+                    <div class="count-box">
+                        <i class="bi bi-emoji-sunglasses"></i>
+                        <span data-purecounter-start="0" data-purecounter-end="68" data-purecounter-duration="1"
+                              class="purecounter"></span>
+                        <p>Рекорд по количеству часов в неделю</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mt-5 mt-lg-0">
+                    <div class="count-box">
+                        <i class="bi bi-lightbulb-fill"></i>
+                        <span data-purecounter-start="0" data-purecounter-end="156" data-purecounter-duration="1"
+                              class="purecounter"></span>
+                        <p>IQ</p>
+                    </div>
+                </div>
+
+            </div>
+
         </div>
-
-        <div class="row">
-
-          <div class="col-lg-3 col-md-6">
-            <div class="count-box">
-              <i class="bi bi-emoji-smile"></i>
-              <span data-purecounter-start="0" data-purecounter-end="{{ daysToday }}" data-purecounter-duration="1" class="purecounter"></span>
-              <p>Дней в работе</p>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6 mt-5 mt-md-0">
-            <div class="count-box">
-              <i class="bi bi-journal-richtext"></i>
-              <span data-purecounter-start="0" data-purecounter-end="{{ hoursInJob }}" data-purecounter-duration="1" class="purecounter"></span>
-              <p>Пары</p>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6 mt-5 mt-lg-0">
-            <div class="count-box">
-              <i class="bi bi-headset"></i>
-              <span data-purecounter-start="0" data-purecounter-end="{{ consultHours }}" data-purecounter-duration="1" class="purecounter"></span>
-              <p>Часов консультаций</p>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6 mt-5 mt-lg-0">
-            <div class="count-box">
-              <i class="bi bi-award"></i>
-              <span data-purecounter-start="0" data-purecounter-end="4" data-purecounter-duration="1" class="purecounter"></span>
-              <p>Преподавала на всех площадках колледжа</p>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6 mt-5 mt-lg-0">
-            <div class="count-box">
-              <i class="bi bi-emoji-sunglasses"></i>
-              <span data-purecounter-start="0" data-purecounter-end="68" data-purecounter-duration="1" class="purecounter"></span>
-              <p>Рекорд по количеству часов в неделю</p>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6 mt-5 mt-lg-0">
-            <div class="count-box">
-              <i class="bi bi-lightbulb-fill"></i>
-              <span data-purecounter-start="0" data-purecounter-end="156" data-purecounter-duration="1" class="purecounter"></span>
-              <p>IQ</p>
-            </div>
-          </div>
-
-        </div>
-
-      </div>
     </section><!-- End Facts Section -->
 
     <!-- ======= Skills Section ======= -->
     <section id="skills" class="skills section-bg">
-      <div class="container" data-aos="fade-up">
+        <div class="container" data-aos="fade-up">
 
-        <div class="section-title">
-          <h2>Навыки</h2>
-          <p></p>
+            <div class="section-title">
+                <h2>Навыки</h2>
+                <p></p>
+            </div>
+
+            <div class="row skills-content">
+
+                <div class="col-lg-6">
+
+                    <div class="progress">
+                        <span class="skill">Python(Язык программирования)<i class="val">80%</i></span>
+                        <div class="progress-bar-wrap">
+                            <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0"
+                                 aria-valuemax="100"></div>
+                        </div>
+                    </div>
+
+                    <div class="progress">
+                        <span class="skill">Логическое мышление <i class="val">99%</i></span>
+                        <div class="progress-bar-wrap">
+                            <div class="progress-bar" role="progressbar" aria-valuenow="99" aria-valuemin="0"
+                                 aria-valuemax="100"></div>
+                        </div>
+                    </div>
+
+                    <div class="progress">
+                        <span class="skill">C#(Язык программирования)<i class="val">70%</i></span>
+                        <div class="progress-bar-wrap">
+                            <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0"
+                                 aria-valuemax="100"></div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="col-lg-6">
+
+                    <div class="progress">
+                        <span class="skill">Коммуникабельность<i class="val">75%</i></span>
+                        <div class="progress-bar-wrap">
+                            <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0"
+                                 aria-valuemax="100"></div>
+                        </div>
+                    </div>
+
+                    <div class="progress">
+                        <span class="skill">Катание на сноуборде <i class="val">60%</i></span>
+                        <div class="progress-bar-wrap">
+                            <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0"
+                                 aria-valuemax="100"></div>
+                        </div>
+                    </div>
+
+                    <div class="progress">
+                        <span class="skill">Photoshop(Фоторедактор)<i class="val">80%</i></span>
+                        <div class="progress-bar-wrap">
+                            <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0"
+                                 aria-valuemax="100"></div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
         </div>
-
-        <div class="row skills-content">
-
-          <div class="col-lg-6">
-
-            <div class="progress">
-              <span class="skill">Python(Язык программирования)<i class="val">80%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-
-            <div class="progress">
-              <span class="skill">Логическое мышление <i class="val">99%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="99" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-
-            <div class="progress">
-              <span class="skill">C#(Язык программирования)<i class="val">70%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-
-          </div>
-
-          <div class="col-lg-6">
-
-            <div class="progress">
-              <span class="skill">Коммуникабельность<i class="val">75%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-
-            <div class="progress">
-              <span class="skill">Катание на сноуборде <i class="val">60%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-
-            <div class="progress">
-              <span class="skill">Photoshop(Фоторедактор)<i class="val">80%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-
-          </div>
-
-        </div>
-
-      </div>
     </section><!-- End Skills Section -->
 
 
     <!-- ======= Resume Section ======= -->
     <section id="resume" class="resume">
-      <div class="container" data-aos="fade-up">
+        <div class="container" data-aos="fade-up">
 
-        <div class="section-title">
-          <h2>Библиотека рекомендуемой литературы</h2>
-          <p>Здесь вы можете найти интересные материалы для обучения</p>
+            <div class="section-title">
+                <h2>Библиотека рекомендуемой литературы</h2>
+                <p>Здесь вы можете найти интересные материалы для обучения</p>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-6">
+                    <h3 class="resume-title">Основные источники по предмету «Математика» для 1 курсов</h3>
+                    <div class="resume-item">
+                        <h4>Литература</h4>
+                        <ul>
+                            <li>Алимов Ш. А. и др. Математика: алгебра и начала математического анализа, геометрия.
+                                Алгебра и начала математического анализа (базовый и углубленный уровни).10—11 классы. —
+                                М., 2017.
+                            </li>
+                            <li>Атанасян Л. С., Бутузов В. Ф., Кадомцев С. Б. и др. Геометрия (базовый и углубленный
+                                уровни). 10—11 классы. — М., 2020.
+                            </li>
+                            <li>Геометрия. 10-11 классы : учебник / А.Д. Александров, Л.А. Вернер, В.И. Рыжик. – М. :
+                                Издательство «Просвещение», 2020. – 257 с. – ISBN: 978-5-09-062551-7
+                            </li>
+                            <li>Мордкович, А.Г. Алгебра и начала математического анализа. 10 класс: В 2 ч. Ч. 1. Учебник
+                                для учащихся общеобразовательных учреждений (профильный уровень) / А.Г. Мордкович, П.В.
+                                Семенов. - М. : Мнемозина, 2020. - 457 с. – ISBN: 978-5-346-01200-9 /
+                            </li>
+                            <li>Мордкович, А.Г. Алгебра и начала математического анализа. 11 класс: В 2 ч. Ч. 1. Учебник
+                                для учащихся общеобразовательных учреждений (профильный уровень) / А.Г. Мордкович, П.В.
+                                Семенов. - М. : Мнемозина, 2020. - 351 с. – ISBN 978-5-346-03199-4/ (базовый и
+                                углубленный уровни).10—11 классы. — М., 2017.
+                            </li>
+                            <li>Мордкович, А.Г. Алгебра и начала математического анализа. 10 класс: В 2 ч. Ч. 2.
+                                Задачник для учащихся общеобразовательных учреждений (профильный уровень) / А.Г.
+                                Мордкович, Л.О. Денищева, Л.И. Звавич [и др.] - М. : Мнемозина, 2020. - 336 с. – ISBN:
+                                978-5-346-01202-3/
+                            </li>
+                            <li>Мордкович, А.Г. Алгебра и начала математического анализа. 11 класс: В 2 ч. Ч. 2.
+                                Задачник для учащихся общеобразовательных учреждений (профильный уровень) / А.Г.
+                                Мордкович, Л.О. Денищева, Л.И. Звавич [и др.],- М. : Мнемозина, 2020. - 137 с. – ISBN:
+                                978-5-346-02411-8/
+                            </li>
+                        </ul>
+                    </div>
+
+                    <h3 class="resume-title">Основные источники по предмету «Математика» для 2 курсов</h3>
+                    <div class="resume-item">
+                        <h4>Литература</h4>
+                        <ul>
+                            <li><a href="https://urait.ru/book/matematicheskiy-analiz-482659">Баврин, И.И.
+                                Метематический анализ: учебник и практикум для СПО / И.И. Баврин. – 2-е изд., испр. и
+                                доп. - М. : Издательство Юрайт, 2019 – 327 с. </a></li>
+                            <li><a href="https://urait.ru/book/matematika-511565">Богомолов Н.В., Самойленко П.И.
+                                Математика: учебник для СПО. - 5-е изд., пер. и доп. - М. : издательство Юрайт, 2022 –
+                                401 с.</a></li>
+                            <li><a href="https://urait.ru/bcode/512668">Богомолов Н. В. Практические занятия по
+                                математике. В 2 ч. Часть 1. Учеб. пособие для СПО. - 11 издание, перераб. и доп.. – М. :
+                                Издательство Юрайт, 2023 – 326 с. </a></li>
+                            <li><a href="https://urait.ru/book/matematicheskiy-analiz-482659">Гмурман В.Е. Теория
+                                вероятностей и математическая статистика: учебник для СПО. – 12-е изд. – М. ;
+                                Издательство Юрайт, 2022. – 479 с.</a></li>
+                            <li><a href="https://urait.ru/bcode/5151159">Капкаева Л.С. Математический анализ: теория
+                                пределов, дифференциальное исчисление: учеб. пособие для СПО/ Л.С. Капкаева. – 2-е изд.,
+                                испр. и доп. - М. : Издательство Юрайт, 2022 – 246 с.</a></li>
+                            <li><a href="https://urait.ru/bcode/513598">Потапов А.П. Линейная алгебра и аналитическая
+                                геометрия: учебник и практикум для СПО / А.П. Потапов. –М.: Издательство Юрайт, 2020–
+                                310 с. </a></li>
+                            <li><a href="https://urait.ru/bcode/513328">Шиловская, Н. А. Финансовая математика: учебник
+                                и практикум для СПО / Шиловская Н. А. — 2-е изд., испр. и доп. — М. : Издательство
+                                Юрайт, 2022. — 176 с. </a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <h3 class="resume-title">IT</h3>
+                    <div class="resume-item">
+                        <h4>Литература по дисциплинам профессионального цикла для специальности «ИСП СИС»</h4>
+                        <ul>
+                            <li><a href="https://urait.ru/bcode/515434">Трофимов, В. В. Основы алгоритмизации и
+                                программирования: учебник для среднего профессионального образования / В. В. Трофимов,
+                                Т. А. Павловская ; под редакцией В. В. Трофимова. — Москва : Издательство Юрайт, 2023. —
+                                137 с. — (Профессиональное образование).</a></li>
+                            <li><a href="https://urait.ru/bcode/517324">Кудрина, Е. В. Основы алгоритмизации и
+                                программирования на языке C# : учебное пособие для среднего профессионального
+                                образования / Е. В. Кудрина, М. В. Огнева. — Москва : Издательство Юрайт, 2023. — 322
+                                с.</a></li>
+                            <li><a href="https://urait.ru/bcode/513113">Черпаков, И. В. Основы программирования :
+                                учебник и практикум для среднего профессионального образования / И. В. Черпаков. —
+                                Москва : Издательство Юрайт, 2023. — 219 с.</a></li>
+                            <li><a href="https://urait.ru/bcode/518822">Зализняк, В. Е. Введение в математическое
+                                моделирование : учебное пособие для среднего профессионального образования / В. Е.
+                                Зализняк, О. А. Золотов. — Москва : Издательство Юрайт, 2023. — 133 с.</a></li>
+                            <li><a href="https://urait.ru/bcode/520443">5. Рейзлин, В. И. Математическое моделирование :
+                                учебное пособие для среднего профессионального образования / В. И. Рейзлин. — 2-е изд.,
+                                перераб. и доп. — Москва : Издательство Юрайт, 2023. — 126</a></li>
+                        </ul>
+                    </div>
+                    <div class="resume-item">
+                        <h4>Цифровые образовательные ресурсы:</h4>
+                        <ul>
+                            <li><a href="https://www.yaklass.ru/">Якласс</a></li>
+                            <li><a href="https://resh.edu.ru/">РЭШ</a></li>
+                            <li><a href="https://online-olympiad.ru/">Всероссийские интернет-олимпиады</a></li>
+                            <li><a href="http://school-collection.edu.ru/">Единая коллекция цифровых образовательных
+                                ресурсов </a></li>
+                        </ul>
+                    </div>
+                    <div class="resume-item">
+                        <h4>Видеоуроки</h4>
+                        <ul>
+                            <li>
+                                <a href="http://www.youtube.com/watch?v=ruqkk5-zYTo&list=PLk91qesJngSI8WAMPJFxX-U8k7ROvDWCK">Вычисление
+                                    матриц </a></li>
+                            <li>
+                                <a href="http://www.youtube.com/watch?v=75vKYomsp_4&list=PL0fi8pW8rjOYEeBMAYjTdzzWb568V5TaL">Ряды
+                                    Тейлора </a></li>
+                            <li><a href="https://www.youtube.com/playlist?list=PL0lO_mIqDDFU66Cwwctcv1C6VNVpaqHfo">Изучение
+                                языка C# для начинающих</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
         </div>
-
-        <div class="row">
-          <div class="col-lg-6">
-            <h3 class="resume-title">Основные источники по предмету «Математика» для 1 курсов</h3>
-            <div class="resume-item">
-              <h4>Литература</h4>
-              <ul>
-                <li>Алимов Ш. А. и др. Математика: алгебра и начала математического анализа, геометрия. Алгебра и начала математического анализа (базовый и углубленный уровни).10—11 классы. — М., 2017. </li>
-                <li>Атанасян Л. С., Бутузов В. Ф., Кадомцев С. Б. и др. Геометрия (базовый и углубленный уровни). 10—11 классы. — М., 2020.</li>
-                <li>Геометрия. 10-11 классы : учебник / А.Д. Александров, Л.А. Вернер, В.И. Рыжик. – М. : Издательство «Просвещение», 2020. – 257 с. – ISBN: 978-5-09-062551-7</li>
-                <li>Мордкович, А.Г. Алгебра и начала математического анализа. 10 класс: В 2 ч. Ч. 1. Учебник для учащихся общеобразовательных учреждений (профильный уровень) / А.Г. Мордкович, П.В. Семенов. - М. : Мнемозина, 2020. - 457 с. – ISBN: 978-5-346-01200-9 /</li>
-                <li>Мордкович, А.Г. Алгебра и начала математического анализа. 11 класс: В 2 ч. Ч. 1. Учебник для учащихся общеобразовательных учреждений (профильный уровень) / А.Г. Мордкович, П.В. Семенов. - М. : Мнемозина, 2020. - 351 с. – ISBN 978-5-346-03199-4/ (базовый и углубленный уровни).10—11 классы. — М., 2017. </li>
-                <li>Мордкович, А.Г. Алгебра и начала математического анализа. 10 класс: В 2 ч. Ч. 2. Задачник для учащихся общеобразовательных учреждений (профильный уровень) / А.Г. Мордкович, Л.О. Денищева, Л.И. Звавич [и др.] - М. : Мнемозина, 2020. - 336 с. – ISBN: 978-5-346-01202-3/</li>
-                <li>Мордкович, А.Г. Алгебра и начала математического анализа. 11 класс: В 2 ч. Ч. 2. Задачник для учащихся общеобразовательных учреждений (профильный уровень) / А.Г. Мордкович, Л.О. Денищева, Л.И. Звавич [и др.],- М. : Мнемозина, 2020. - 137 с. – ISBN: 978-5-346-02411-8/ </li>
-              </ul>
-            </div>
-
-            <h3 class="resume-title">Основные источники по предмету «Математика» для 2 курсов</h3>
-            <div class="resume-item">
-              <h4>Литература</h4>
-              <ul>
-                <li><a href="https://urait.ru/book/matematicheskiy-analiz-482659">Баврин, И.И. Метематический анализ: учебник и практикум для СПО / И.И. Баврин. – 2-е изд., испр. и доп. - М. : Издательство Юрайт, 2019 – 327 с. </a></li>
-                <li><a href="https://urait.ru/book/matematika-511565">Богомолов Н.В., Самойленко П.И. Математика: учебник для СПО. - 5-е изд., пер. и доп. - М. : издательство Юрайт, 2022 – 401 с.</a></li>
-                <li><a href="https://urait.ru/bcode/512668">Богомолов Н. В. Практические занятия по математике. В 2 ч. Часть 1. Учеб. пособие для СПО. - 11 издание, перераб. и доп.. – М. : Издательство Юрайт, 2023 – 326 с. </a></li>
-                <li><a href="https://urait.ru/book/matematicheskiy-analiz-482659">Гмурман В.Е. Теория вероятностей и математическая статистика: учебник для СПО. – 12-е изд. – М. ; Издательство Юрайт, 2022. – 479 с.</a></li>
-                <li><a href="https://urait.ru/bcode/5151159">Капкаева Л.С. Математический анализ: теория пределов, дифференциальное исчисление: учеб. пособие для СПО/ Л.С. Капкаева. – 2-е изд., испр. и доп. - М. : Издательство Юрайт, 2022 – 246 с.</a></li>
-                <li><a href="https://urait.ru/bcode/513598">Потапов А.П. Линейная алгебра и аналитическая геометрия: учебник и практикум для СПО / А.П. Потапов. –М.: Издательство Юрайт, 2020– 310 с. </a></li>
-                <li><a href="https://urait.ru/bcode/513328">Шиловская, Н. А. Финансовая математика: учебник и практикум для СПО / Шиловская Н. А. — 2-е изд., испр. и доп. — М. : Издательство Юрайт, 2022. — 176 с. </a></li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-lg-6">
-            <h3 class="resume-title">IT</h3>
-            <div class="resume-item">
-              <h4>Литература по дисциплинам профессионального цикла для специальности «ИСП СИС»</h4>
-              <ul>
-                <li><a href="https://urait.ru/bcode/515434">Трофимов, В. В.  Основы алгоритмизации и программирования: учебник для среднего профессионального образования / В. В. Трофимов, Т. А. Павловская ; под редакцией В. В. Трофимова. — Москва : Издательство Юрайт, 2023. — 137 с. — (Профессиональное образование).</a></li>
-                <li><a href="https://urait.ru/bcode/517324">Кудрина, Е. В.  Основы алгоритмизации и программирования на языке C# : учебное пособие для среднего профессионального образования / Е. В. Кудрина, М. В. Огнева. — Москва : Издательство Юрайт, 2023. — 322 с.</a></li>
-                <li><a href="https://urait.ru/bcode/513113">Черпаков, И. В.  Основы программирования : учебник и практикум для среднего профессионального образования / И. В. Черпаков. — Москва : Издательство Юрайт, 2023. — 219 с.</a></li>
-                <li><a href="https://urait.ru/bcode/518822">Зализняк, В. Е.  Введение в математическое моделирование : учебное пособие для среднего профессионального образования / В. Е. Зализняк, О. А. Золотов. — Москва : Издательство Юрайт, 2023. — 133 с.</a></li>
-                <li><a href="https://urait.ru/bcode/520443">5.	Рейзлин, В. И.  Математическое моделирование : учебное пособие для среднего профессионального образования / В. И. Рейзлин. — 2-е изд., перераб. и доп. — Москва : Издательство Юрайт, 2023. — 126</a></li>
-              </ul>
-            </div>
-            <div class="resume-item">
-              <h4>Цифровые образовательные ресурсы:</h4>
-              <ul>
-                <li><a href="https://www.yaklass.ru/">Якласс</a></li>
-                <li><a href="https://resh.edu.ru/">РЭШ</a></li>
-                <li><a href="https://online-olympiad.ru/">Всероссийские интернет-олимпиады</a></li>
-                <li><a href="http://school-collection.edu.ru/">Единая коллекция цифровых образовательных ресурсов </a></li>
-              </ul>
-            </div>
-            <div class="resume-item">
-              <h4>Видеоуроки</h4>
-              <ul>
-               <li><a href="http://www.youtube.com/watch?v=ruqkk5-zYTo&list=PLk91qesJngSI8WAMPJFxX-U8k7ROvDWCK">Вычисление матриц </a></li>
-                <li><a href="http://www.youtube.com/watch?v=75vKYomsp_4&list=PL0fi8pW8rjOYEeBMAYjTdzzWb568V5TaL">Ряды Тейлора </a></li>
-                <li><a href="https://www.youtube.com/playlist?list=PL0lO_mIqDDFU66Cwwctcv1C6VNVpaqHfo">Изучение языка C# для начинающих</a></li>
-              </ul>
-          </div>
-        </div>
-
-      </div>
-      </div>
     </section><!-- End Resume Section -->
     <section id="servicesTest" class="services">
-      <div class="container" data-aos="fade-up">
-        <div class="section-title">
-          <h2>Методические материалы</h2>
+        <div class="container" data-aos="fade-up">
+            <div class="section-title">
+                <h2>Методические материалы</h2>
+            </div>
+            <div>
+                <ul>
+                    <li>
+                        <a href="https://docs.google.com/document/d/1qJu-tyQTW6aZMsbGNlh5tHFp1RenAmbd/edit?usp=share_link&ouid=116190217350821012787&rtpof=true&sd=true">ЕН.01
+                            МАТЕМАТИКА 40.02.01 </a></li>
+                    <li>
+                        <a href="https://docs.google.com/document/d/1t8OAWXdXqKs2v41k29G5OQZCLr2PHgl1/edit?usp=share_link&ouid=116190217350821012787&rtpof=true&sd=true">ЕН.01
+                            МАТЕМАТИКА 46.02.01</a></li>
+                    <li>
+                        <a href="https://docs.google.com/document/d/1C_AV_RBvk3HiJZuY94svClyBgIpVspSr/edit?usp=share_link&ouid=116190217350821012787&rtpof=true&sd=true">ЕН01
+                            Математика 38.02.01 </a></li>
+                    <li>
+                        <a href="https://docs.google.com/document/d/1C1AJ848WcEDzOWQFPzSUB9urF9rzziPs/edit?usp=share_link&ouid=116190217350821012787&rtpof=true&sd=true">ЕН01
+                            Математика 38.02.01</a></li>
+                    <li>
+                        <a href="https://docs.google.com/document/d/1Ay66CkexECHCTfl580vz6HQqrE1iY0If/edit?usp=share_link&ouid=116190217350821012787&rtpof=true&sd=true">ПУП.01
+                            Математика 15.02.06</a></li>
+                    <li>
+                        <a href="https://docs.google.com/document/d/1phIZkUqkVZG7pnM0QYtk60A5ntFA7lVe/edit?usp=share_link&ouid=116190217350821012787&rtpof=true&sd=true">ПУП.02
+                            МАТЕМАТИКА 40.02.02 </a></li>
+                    <li>
+                        <a href="https://docs.google.com/document/d/1ADJiJ2WOMWqSf-OHQm9ZOVRZZM_HTg9s/edit?usp=share_link&ouid=116190217350821012787&rtpof=true&sd=true">ПУП.02
+                            МАТЕМАТИКА 40.02.03 </a></li>
+                </ul>
+            </div>
         </div>
-        <div>
-          <ul>
-            <li><a href="https://docs.google.com/document/d/1qJu-tyQTW6aZMsbGNlh5tHFp1RenAmbd/edit?usp=share_link&ouid=116190217350821012787&rtpof=true&sd=true">ЕН.01 МАТЕМАТИКА 40.02.01 </a></li>
-            <li><a href="https://docs.google.com/document/d/1t8OAWXdXqKs2v41k29G5OQZCLr2PHgl1/edit?usp=share_link&ouid=116190217350821012787&rtpof=true&sd=true">ЕН.01 МАТЕМАТИКА 46.02.01</a></li>
-            <li><a href="https://docs.google.com/document/d/1C_AV_RBvk3HiJZuY94svClyBgIpVspSr/edit?usp=share_link&ouid=116190217350821012787&rtpof=true&sd=true">ЕН01 Математика 38.02.01  </a></li>
-            <li><a href="https://docs.google.com/document/d/1C1AJ848WcEDzOWQFPzSUB9urF9rzziPs/edit?usp=share_link&ouid=116190217350821012787&rtpof=true&sd=true">ЕН01 Математика 38.02.01</a></li>
-              <li><a href="https://docs.google.com/document/d/1Ay66CkexECHCTfl580vz6HQqrE1iY0If/edit?usp=share_link&ouid=116190217350821012787&rtpof=true&sd=true">ПУП.01 Математика 15.02.06</a></li>
-              <li><a href="https://docs.google.com/document/d/1phIZkUqkVZG7pnM0QYtk60A5ntFA7lVe/edit?usp=share_link&ouid=116190217350821012787&rtpof=true&sd=true">ПУП.02 МАТЕМАТИКА 40.02.02 </a></li>
-              <li><a href="https://docs.google.com/document/d/1ADJiJ2WOMWqSf-OHQm9ZOVRZZM_HTg9s/edit?usp=share_link&ouid=116190217350821012787&rtpof=true&sd=true">ПУП.02 МАТЕМАТИКА 40.02.03 </a></li>
-          </ul>
-        </div>
-      </div>
     </section>
 
     <!-- ======= Portfolio Section ======= -->
     <section id="portfolio" class="portfolio section-bg">
-      <div class="container" data-aos="fade-up">
+        <div class="container" data-aos="fade-up">
 
-        <div class="section-title">
-          <h2>Достижения</h2>
+            <div class="section-title">
+                <h2>Достижения</h2>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-12 d-flex justify-content-center" data-aos="fade-up" data-aos-delay="100">
+                    <ul id="portfolio-flters">
+                        <li data-filter="*" class="filter-active">Все</li>
+                        <li data-filter=".filter-2020">2020</li>
+                        <li data-filter=".filter-2021">2021</li>
+                        <li data-filter=".filter-2022">2022</li>
+                        <li data-filter=".filter-blago">Благодарственные письма</li>
+                        <li data-filter=".filter-sert">Сертификаты</li>
+                        <li data-filter=".filter-up">Повышения квалификации</li>
+                        <li data-filter=".filter-diplom">Дипломы</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
+
+                <div class="col-lg-4 col-md-6 portfolio-item filter-2021 filter-blago">
+                    <div class="portfolio-wrap">
+                        <img src="{% static 'dzeApp/img/achievements/blagodarstvennoe_pismo.jpg' %}" class="img-fluid"
+                             alt="">
+                        <div class="portfolio-info">
+                            <h4>Благодарственное письмо</h4>
+                            <p>за помощь в организации регионального шахматного турнира 2021</p>
+                            <div class="portfolio-links">
+                                <a href="{% static 'dzeApp/img/achievements/blagodarstvennoe_pismo.jpg' %}"
+                                   data-gallery="portfolioGallery" class="portfolio-lightbox" title=""><i
+                                        class="bx bx-plus"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 portfolio-item filter-2021 filter-diplom">
+                    <div class="portfolio-wrap">
+                        <img src="{% static 'dzeApp/img/achievements/diplom.jpg' %}" class="img-fluid" alt="">
+                        <div class="portfolio-info">
+                            <h4>Диплом 2 степени</h4>
+                            <p>2 место2021</p>
+                            <div class="portfolio-links">
+                                <a href="{% static 'dzeApp/img/achievements/diplom.jpg' %}"
+                                   data-gallery="portfolioGallery" class="portfolio-lightbox" title=""><i
+                                        class="bx bx-plus"></i></a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 portfolio-item filter-2020 filter-blago">
+                    <div class="portfolio-wrap">
+                        <img src="{% static 'dzeApp/img/achievements/olimpys2020.jpg' %}" class="img-fluid" alt="">
+                        <div class="portfolio-info">
+                            <h4>Благодарность</h4>
+                            <p>Олимпис-2020-Весенняя сессия</p>
+                            <div class="portfolio-links">
+                                <a href="{% static 'dzeApp/img/achievements/olimpys2020.jpg' %}"
+                                   data-gallery="portfolioGallery" class="portfolio-lightbox" title=""><i
+                                        class="bx bx-plus"></i></a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 portfolio-item filter-2021 filter-sert">
+                    <div class="portfolio-wrap">
+                        <img src="{% static 'dzeApp/img/achievements/olimpys2021.jpg' %}" class="img-fluid" alt="">
+                        <div class="portfolio-info">
+                            <h4>Сертификат</h4>
+                            <p>Олимпис-2021-Осенняя сессия</p>
+                            <div class="portfolio-links">
+                                <a href="{% static 'dzeApp/img/achievements/olimpys2021.jpg' %}"
+                                   data-gallery="portfolioGallery" class="portfolio-lightbox" title=""><i
+                                        class="bx bx-plus"></i></a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 portfolio-item filter-2021 filter-blago">
+                    <div class="portfolio-wrap">
+                        <img src="{% static 'dzeApp/img/achievements/olimpys2021Vesna.jpg' %}" class="img-fluid" alt="">
+                        <div class="portfolio-info">
+                            <h4>Благодарность</h4>
+                            <p>Олимпис-2021-Весенняя сессия</p>
+                            <div class="portfolio-links">
+                                <a href="{% static 'dzeApp/img/achievements/olimpys2021Vesna.jpg' %}"
+                                   data-gallery="portfolioGallery" class="portfolio-lightbox" title=""><i
+                                        class="bx bx-plus"></i></a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 portfolio-item filter-2020 filter-sert">
+                    <div class="portfolio-wrap">
+                        <img src="{% static 'dzeApp/img/achievements/olimpysEetk.jpg' %}" class="img-fluid" alt="">
+                        <div class="portfolio-info">
+                            <h4>Свидетельство</h4>
+                            <p>Олимпис-2020-Осенняя сессия</p>
+                            <div class="portfolio-links">
+                                <a href="{% static 'dzeApp/img/achievements/olimpysEetk.jpg' %}"
+                                   data-gallery="portfolioGallery" class="portfolio-lightbox" title=""><i
+                                        class="bx bx-plus"></i></a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 portfolio-item filter-2020 filter-sert">
+                    <div class="portfolio-wrap">
+                        <img src="{% static 'dzeApp/img/achievements/sertik.jpg' %}" class="img-fluid" alt="">
+                        <div class="portfolio-info">
+                            <h4>Сертификат</h4>
+                            <p>Педагогические идеи</p>
+                            <div class="portfolio-links">
+                                <a href="{% static 'dzeApp/img/achievements/sertik.jpg' %}"
+                                   data-gallery="portfolioGallery" class="portfolio-lightbox" title=""><i
+                                        class="bx bx-plus"></i></a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 portfolio-item filter-2022 filter-blago">
+                    <div class="portfolio-wrap">
+                        <img src="{% static 'dzeApp/img/achievements/levan1.jpg' %}" class="img-fluid" alt="">
+                        <div class="portfolio-info">
+                            <h4>Благодарственное</h4>
+                            <div class="portfolio-links">
+                                <a href="{% static 'dzeApp/img/achievements/levan1.jpg' %}"
+                                   data-gallery="portfolioGallery" class="portfolio-lightbox" title=""><i
+                                        class="bx bx-plus"></i></a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 portfolio-item filter-2022 filter-blago">
+                    <div class="portfolio-wrap">
+                        <img src="{% static 'dzeApp/img/achievements/levan2.jpg' %}" class="img-fluid" alt="">
+                        <div class="portfolio-info">
+                            <h4>Благодарственное письмо</h4>
+                            <p>с 90-летием 2022</p>
+                            <div class="portfolio-links">
+                                <a href="{% static 'dzeApp/img/achievements/levan2.jpg' %}"
+                                   data-gallery="portfolioGallery" class="portfolio-lightbox" title=""><i
+                                        class="bx bx-plus"></i></a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 portfolio-item filter-2022 filter-diplom">
+                    <div class="portfolio-wrap">
+                        <img src="{% static 'dzeApp/img/achievements/levan4.jpg' %}" class="img-fluid" alt="">
+                        <div class="portfolio-info">
+                            <h4>Диплом</h4>
+                            <p>РОСТКОНКУРС</p>
+                            <div class="portfolio-links">
+                                <a href="{% static 'dzeApp/img/achievements/levan4.jpg' %}"
+                                   data-gallery="portfolioGallery" class="portfolio-lightbox" title=""><i
+                                        class="bx bx-plus"></i></a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 portfolio-item filter-2021 filter-sertik">
+                    <div class="portfolio-wrap">
+                        <img src="{% static 'dzeApp/img/achievements/levan5.jpg' %}" class="img-fluid" alt="">
+                        <div class="portfolio-info">
+                            <h4>Свидетельство</h4>
+                            <p>Олимпис 2021 - Осень</p>
+                            <div class="portfolio-links">
+                                <a href="{% static 'dzeApp/img/achievements/levan5.jpg' %}"
+                                   data-gallery="portfolioGallery" class="portfolio-lightbox" title=""><i
+                                        class="bx bx-plus"></i></a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 portfolio-item filter-2022 filter-blago">
+                    <div class="portfolio-wrap">
+                        <img src="{% static 'dzeApp/img/achievements/levan6.jpg' %}" class="img-fluid" alt="">
+                        <div class="portfolio-info">
+                            <h4>Благодарственное письмо</h4>
+                            <p>Библионочь-2022</p>
+                            <div class="portfolio-links">
+                                <a href="{% static 'dzeApp/img/achievements/levan6.jpg' %}"
+                                   data-gallery="portfolioGallery" class="portfolio-lightbox" title=""><i
+                                        class="bx bx-plus"></i></a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 portfolio-item filter-2022 filter-up">
+                    <div class="portfolio-wrap">
+                        <img src="{% static 'dzeApp/img/achievements/levan7.jpg' %}" class="img-fluid" alt="">
+                        <div class="portfolio-info">
+                            <h4>Удостоверение</h4>
+                            <p>о повышении квалификации</p>
+                            <div class="portfolio-links">
+                                <a href="{% static 'dzeApp/img/achievements/levan7.jpg' %}"
+                                   data-gallery="portfolioGallery" class="portfolio-lightbox" title=""><i
+                                        class="bx bx-plus"></i></a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 portfolio-item filter-2022 filter-blago">
+                    <div class="portfolio-wrap">
+                        <img src="{% static 'dzeApp/img/achievements/blago.jpg' %}" class="img-fluid" alt="">
+                        <div class="portfolio-info">
+                            <h4>Благодарственное письмо</h4>
+                            <p>Ленинский район-2022</p>
+                            <div class="portfolio-links">
+                                <a href="{% static 'dzeApp/img/achievements/blago.jpg' %}"
+                                   data-gallery="portfolioGallery" class="portfolio-lightbox" title=""><i
+                                        class="bx bx-plus"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 portfolio-item filter-2020 filter-blago">
+                    <div class="portfolio-wrap">
+                        <img src="{% static 'dzeApp/img/achievements/levan8.jpg' %}" class="img-fluid" alt="">
+                        <div class="portfolio-info">
+                            <h4>Благодарственное письмо</h4>
+                            <p>SkyEng</p>
+                            <div class="portfolio-links">
+                                <a href="{% static 'dzeApp/img/achievements/levan8.jpg' %}"
+                                   data-gallery="portfolioGallery" class="portfolio-lightbox" title=""><i
+                                        class="bx bx-plus"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 portfolio-item filter-2022 filter-up">
+                    <div class="portfolio-wrap">
+                        <img src="{% static 'dzeApp/img/achievements/levan9.jpg' %}" class="img-fluid" alt="">
+                        <div class="portfolio-info">
+                            <h4>Повышение квалификации</h4>
+                            <p>Yandex</p>
+                            <div class="portfolio-links">
+                                <a href="{% static 'dzeApp/img/achievements/levan9.jpg' %}"
+                                   data-gallery="portfolioGallery" class="portfolio-lightbox" title=""><i
+                                        class="bx bx-plus"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
         </div>
-
-        <div class="row">
-          <div class="col-lg-12 d-flex justify-content-center" data-aos="fade-up" data-aos-delay="100">
-            <ul id="portfolio-flters">
-              <li data-filter="*" class="filter-active">Все</li>
-              <li data-filter=".filter-2020">2020</li>
-              <li data-filter=".filter-2021">2021</li>
-              <li data-filter=".filter-2022">2022</li>
-                <li data-filter=".filter-blago">Благодарственные письма</li>
-                <li data-filter=".filter-sert">Сертификаты</li>
-                <li data-filter=".filter-up">Повышения квалификации</li>
-                <li data-filter=".filter-diplom">Дипломы</li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-2021 filter-blago">
-            <div class="portfolio-wrap">
-              <img src="{% static 'dzeApp/img/achievements/blagodarstvennoe_pismo.jpg' %}" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Благодарственное письмо</h4>
-                <p>за помощь в организации регионального шахматного турнира 2021</p>
-                <div class="portfolio-links">
-                  <a href="{% static 'dzeApp/img/achievements/blagodarstvennoe_pismo.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox" title=""><i class="bx bx-plus"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-2021 filter-diplom">
-            <div class="portfolio-wrap">
-              <img src="{% static 'dzeApp/img/achievements/diplom.jpg' %}" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Диплом 2 степени</h4>
-                <p>2 место2021</p>
-                <div class="portfolio-links">
-                  <a href="{% static 'dzeApp/img/achievements/diplom.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox" title=""><i class="bx bx-plus"></i></a>
-
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-2020 filter-blago">
-            <div class="portfolio-wrap">
-              <img src="{% static 'dzeApp/img/achievements/olimpys2020.jpg' %}" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Благодарность</h4>
-                <p>Олимпис-2020-Весенняя сессия</p>
-                <div class="portfolio-links">
-                  <a href="{% static 'dzeApp/img/achievements/olimpys2020.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox" title=""><i class="bx bx-plus"></i></a>
-
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-2021 filter-sert">
-            <div class="portfolio-wrap">
-              <img src="{% static 'dzeApp/img/achievements/olimpys2021.jpg' %}" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Сертификат</h4>
-                <p>Олимпис-2021-Осенняя сессия</p>
-                <div class="portfolio-links">
-                  <a href="{% static 'dzeApp/img/achievements/olimpys2021.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox" title=""><i class="bx bx-plus"></i></a>
-
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-2021 filter-blago">
-            <div class="portfolio-wrap">
-              <img src="{% static 'dzeApp/img/achievements/olimpys2021Vesna.jpg' %}" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Благодарность</h4>
-                <p>Олимпис-2021-Весенняя сессия</p>
-                <div class="portfolio-links">
-                  <a href="{% static 'dzeApp/img/achievements/olimpys2021Vesna.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox" title=""><i class="bx bx-plus"></i></a>
-
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-2020 filter-sert">
-            <div class="portfolio-wrap">
-              <img src="{% static 'dzeApp/img/achievements/olimpysEetk.jpg' %}" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Свидетельство</h4>
-                <p>Олимпис-2020-Осенняя сессия</p>
-                <div class="portfolio-links">
-                  <a href="{% static 'dzeApp/img/achievements/olimpysEetk.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox" title=""><i class="bx bx-plus"></i></a>
-
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-2020 filter-sert">
-            <div class="portfolio-wrap">
-              <img src="{% static 'dzeApp/img/achievements/sertik.jpg' %}" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Сертификат</h4>
-                <p>Педагогические идеи</p>
-                <div class="portfolio-links">
-                  <a href="{% static 'dzeApp/img/achievements/sertik.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox" title=""><i class="bx bx-plus"></i></a>
-
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6 portfolio-item filter-2022 filter-blago">
-            <div class="portfolio-wrap">
-              <img src="{% static 'dzeApp/img/achievements/levan1.jpg' %}" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Благодарственное</h4>
-                <div class="portfolio-links">
-                  <a href="{% static 'dzeApp/img/achievements/levan1.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox" title=""><i class="bx bx-plus"></i></a>
-
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-2022 filter-blago">
-            <div class="portfolio-wrap">
-              <img src="{% static 'dzeApp/img/achievements/levan2.jpg' %}" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Благодарственное письмо</h4>
-                <p>с 90-летием 2022</p>
-                <div class="portfolio-links">
-                  <a href="{% static 'dzeApp/img/achievements/levan2.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox" title=""><i class="bx bx-plus"></i></a>
-
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6 portfolio-item filter-2022 filter-diplom">
-            <div class="portfolio-wrap">
-              <img src="{% static 'dzeApp/img/achievements/levan4.jpg' %}" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Диплом</h4>
-                <p>РОСТКОНКУРС</p>
-                <div class="portfolio-links">
-                  <a href="{% static 'dzeApp/img/achievements/levan4.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox" title=""><i class="bx bx-plus"></i></a>
-
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6 portfolio-item filter-2021 filter-sertik">
-            <div class="portfolio-wrap">
-              <img src="{% static 'dzeApp/img/achievements/levan5.jpg' %}" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Свидетельство</h4>
-                <p>Олимпис 2021 - Осень</p>
-                <div class="portfolio-links">
-                  <a href="{% static 'dzeApp/img/achievements/levan5.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox" title=""><i class="bx bx-plus"></i></a>
-
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6 portfolio-item filter-2022 filter-blago">
-            <div class="portfolio-wrap">
-              <img src="{% static 'dzeApp/img/achievements/levan6.jpg' %}" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Благодарственное письмо</h4>
-                <p>Библионочь-2022</p>
-                <div class="portfolio-links">
-                  <a href="{% static 'dzeApp/img/achievements/levan6.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox" title=""><i class="bx bx-plus"></i></a>
-
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6 portfolio-item filter-2022 filter-up" >
-            <div class="portfolio-wrap">
-              <img src="{% static 'dzeApp/img/achievements/levan7.jpg' %}" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Удостоверение</h4>
-                <p>о повышении квалификации</p>
-                <div class="portfolio-links">
-                  <a href="{% static 'dzeApp/img/achievements/levan7.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox" title=""><i class="bx bx-plus"></i></a>
-
-                </div>
-              </div>
-            </div>
-          </div>
-            <div class="col-lg-4 col-md-6 portfolio-item filter-2022 filter-blago">
-            <div class="portfolio-wrap">
-              <img src="{% static 'dzeApp/img/achievements/blago.jpg' %}" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Благодарственное письмо</h4>
-                <p>Ленинский район-2022</p>
-                <div class="portfolio-links">
-                  <a href="{% static 'dzeApp/img/achievements/blago.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox" title=""><i class="bx bx-plus"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-            <div class="col-lg-4 col-md-6 portfolio-item filter-2020 filter-blago">
-            <div class="portfolio-wrap">
-              <img src="{% static 'dzeApp/img/achievements/levan8.jpg' %}" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Благодарственное письмо</h4>
-                <p>SkyEng</p>
-                <div class="portfolio-links">
-                  <a href="{% static 'dzeApp/img/achievements/levan8.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox" title=""><i class="bx bx-plus"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-            <div class="col-lg-4 col-md-6 portfolio-item filter-2022 filter-up">
-            <div class="portfolio-wrap">
-              <img src="{% static 'dzeApp/img/achievements/levan9.jpg' %}" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Повышение квалификации</h4>
-                <p>Yandex</p>
-                <div class="portfolio-links">
-                  <a href="{% static 'dzeApp/img/achievements/levan9.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox" title=""><i class="bx bx-plus"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-
-
-
-        </div>
-
-      </div>
     </section><!-- End Portfolio Section -->
 
     <!-- ======= Services Section ======= -->
     <section id="services" class="services">
-      <div class="container" data-aos="fade-up">
+        <div class="container" data-aos="fade-up">
 
-        <div class="section-title">
-          <h2>Расписание</h2>
-          <p>Здесь вы можете узнать где и во сколько меня можно найти</p>
+            <div class="section-title">
+                <h2>Расписание</h2>
+                <p>Здесь вы можете узнать где и во сколько меня можно найти</p>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-4 col-md-6  align-items-stretch" data-aos="zoom-in" data-aos-delay="100"
+                     data-toggle="modal" data-target="#modal-monday">
+                    <div class="icon-box iconbox-blue">
+                        <div class="icon">
+                            <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke="none" stroke-width="0" fill="#f5f5f5"
+                                      d="M300,521.0016835830174C376.1290562159157,517.8887921683347,466.0731472004068,529.7835943286574,510.70327084640275,468.03025145048787C554.3714126377745,407.6079735673963,508.03601936045806,328.9844924480964,491.2728898941984,256.3432110539036C474.5976632858925,184.082847569629,479.9380746630129,96.60480741107993,416.23090153303,58.64404602377083C348.86323505073057,18.502131276798302,261.93793281208167,40.57373210992963,193.5410806939664,78.93577620505333C130.42746243093433,114.334589627462,98.30271207620316,179.96522072025542,76.75703585869454,249.04625023123273C51.97151888228291,328.5150500222984,13.704378332031375,421.85034740162234,66.52175969318436,486.19268352777647C119.04800174914682,550.1803526380478,217.28368757567262,524.383925680826,300,521.0016835830174"></path>
+                            </svg>
+                            <i class="bx bxl-dribbble"></i>
+                        </div>
+                        <h3>Понедельник</h3>
+                        <h4 style="color: blue">Площадка МТО</h4>
+                        <h4 style="color: blue">Космонавтов 50</h4>
+                    </div>
+                </div>
+
+
+                <div class="col-lg-4 col-md-6 align-items-stretch mt-4 mt-md-0" data-aos="zoom-in" data-aos-delay="200"
+                     data-toggle="modal" data-target="#modal-tuesday">
+                    <div class="icon-box iconbox-orange ">
+                        <div class="icon">
+                            <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke="none" stroke-width="0" fill="#f5f5f5"
+                                      d="M300,582.0697525312426C382.5290701553225,586.8405444964366,449.9789794690241,525.3245884688669,502.5850820975895,461.55621195738473C556.606425686781,396.0723002908107,615.8543463187945,314.28637112970534,586.6730223649479,234.56875336149918C558.9533121215079,158.8439757836574,454.9685369536778,164.00468322053177,381.49747125262974,130.76875717737553C312.15926192815925,99.40240125094834,248.97055460311594,18.661163978235184,179.8680185752513,50.54337015887873C110.5421016452524,82.52863877960104,119.82277516462835,180.83849132639028,109.12597500060166,256.43424936330496C100.08760227029461,320.3096726198365,92.17705696193138,384.0621239912766,124.79988738764834,439.7174275375508C164.83382741302287,508.01625554203684,220.96474134820875,577.5009287672846,300,582.0697525312426"></path>
+                            </svg>
+                            <i class="bx bx-file"></i>
+                        </div>
+                        <h4>Вторник</h4>
+                        <h4 style="color: red">Площадка ЭТО</h4>
+                        <h4 style="color: red">Ясная 5</h4>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 align-items-stretch mt-4 mt-lg-0" data-aos="zoom-in" data-aos-delay="300"
+                     data-toggle="modal" data-target="#modal-wednesday">
+                    <div class="icon-box iconbox-pink">
+                        <div class="icon">
+                            <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke="none" stroke-width="0" fill="#f5f5f5"
+                                      d="M300,541.5067337569781C382.14930387511276,545.0595476570109,479.8736841581634,548.3450877840088,526.4010558755058,480.5488172755941C571.5218469581645,414.80211281144784,517.5187510058486,332.0715597781072,496.52539010469104,255.14436215662573C477.37192572678356,184.95920475031193,473.57363656557914,105.61284051026155,413.0603344069578,65.22779650032875C343.27470386102294,18.654635553484475,251.2091493199835,5.337323636656869,175.0934190732945,40.62881213300186C97.87086631185822,76.43348514350839,51.98124368387456,156.15599469081315,36.44837278890362,239.84606092416172C21.716077023791087,319.22268207091537,43.775223500013084,401.1760424656574,96.891909868211,461.97329694683043C147.22146801428983,519.5804099606455,223.5754009179313,538.201503339737,300,541.5067337569781"></path>
+                            </svg>
+                            <i class="bx bx-tachometer"></i>
+                        </div>
+                        <h4>Среда</h4>
+                        <h4 style="color: blue">Площадка МТО</h4>
+                        <h4 style="color: blue">Космонавтов 50</h4>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="100"
+                     data-toggle="modal" data-target="#modal-thursday">
+                    <div class="icon-box iconbox-yellow">
+                        <div class="icon">
+                            <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke="none" stroke-width="0" fill="#f5f5f5"
+                                      d="M300,503.46388370962813C374.79870501325706,506.71871716319447,464.8034551963731,527.1746412648533,510.4981551193396,467.86667711651364C555.9287308511215,408.9015244558933,512.6030010748507,327.5744911775523,490.211057578863,256.5855673507754C471.097692560561,195.9906835881958,447.69079081568157,138.11976852964426,395.19560036434837,102.3242989838813C329.3053358748298,57.3949838291264,248.02791733380457,8.279543830951368,175.87071277845988,42.242879143198664C103.41431057327972,76.34704239035025,93.79494320519305,170.9812938413882,81.28167332365135,250.07896920659033C70.17666984294237,320.27484674793965,64.84698225790005,396.69656628748305,111.28512138212992,450.4950937839243C156.20124167950087,502.5303643271138,231.32542653798444,500.4755392045468,300,503.46388370962813"></path>
+                            </svg>
+                            <i class="bx bx-layer"></i>
+                        </div>
+                        <h4>Четверг</h4>
+                        <h4 style="color: purple">Площадка ЭТО</h4>
+                        <h4 style="color: purple">Декбристов 58</h4>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="200"
+                     data-toggle="modal" data-target="#modal-friday">
+                    <div class="icon-box iconbox-red">
+                        <div class="icon">
+                            <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke="none" stroke-width="0" fill="#f5f5f5"
+                                      d="M300,532.3542879108572C369.38199826031484,532.3153073249985,429.10787420159085,491.63046689027357,474.5244479745417,439.17860296908856C522.8885846962883,383.3225815378663,569.1668002868075,314.3205725914397,550.7432151929288,242.7694973846089C532.6665558377875,172.5657663291529,456.2379748765914,142.6223662098291,390.3689995646985,112.34683881706744C326.66090330228417,83.06452184765237,258.84405631176094,53.51806209861945,193.32584062364296,78.48882559362697C121.61183558270385,105.82097193414197,62.805066853699245,167.19869350419734,48.57481801355237,242.6138429142374C34.843463184063346,315.3850353017275,76.69343916112496,383.4422959591041,125.22947124332185,439.3748458443577C170.7312796277747,491.8107796887764,230.57421082200815,532.3932930995766,300,532.3542879108572"></path>
+                            </svg>
+                            <i class="bx bx-slideshow"></i>
+                        </div>
+                        <h4>Пятница</h4>
+                        <h4 style="color: red">Площадка ЭТО</h4>
+                        <h4 style="color: red">Ясная 5</h4>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 align-items-stretch mt-4 " data-aos="zoom-in" data-aos-delay="300"
+                     data-toggle="modal" data-target="#modal-saturday">
+                    <div class="icon-box iconbox-teal">
+                        <div class="icon">
+                            <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke="none" stroke-width="0" fill="#f5f5f5"
+                                      d="M300,566.797414625762C385.7384707136149,576.1784315230908,478.7894351017131,552.8928747891023,531.9192734346935,484.94944893311C584.6109503024035,417.5663521118492,582.489472248146,322.67544863468447,553.9536738515405,242.03673114598146C529.1557734026468,171.96086150256528,465.24506316201064,127.66468636344209,395.9583748389544,100.7403814666027C334.2173773831606,76.7482773500951,269.4350130405921,84.62216499799875,207.1952322260088,107.2889140133804C132.92018162631612,134.33871894543012,41.79353780512637,160.00259165414826,22.644507872594943,236.69541883565114C3.319112789854554,314.0945973066697,72.72355303640163,379.243833228382,124.04198916343866,440.3218312028393C172.9286146004772,498.5055451809895,224.45579914871206,558.5317968840102,300,566.797414625762"></path>
+                            </svg>
+                            <i class="bx bx-arch"></i>
+                        </div>
+                        <h4>Суббота</h4>
+                        <h4 style="color: green">ДО</h4>
+                    </div>
+                </div>
+
+            </div>
+
         </div>
-
-        <div class="row">
-          <div class="col-lg-4 col-md-6  align-items-stretch" data-aos="zoom-in" data-aos-delay="100" data-toggle="modal" data-target="#modal-monday" >
-            <div class="icon-box iconbox-blue">
-              <div class="icon">
-                <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
-                  <path stroke="none" stroke-width="0" fill="#f5f5f5" d="M300,521.0016835830174C376.1290562159157,517.8887921683347,466.0731472004068,529.7835943286574,510.70327084640275,468.03025145048787C554.3714126377745,407.6079735673963,508.03601936045806,328.9844924480964,491.2728898941984,256.3432110539036C474.5976632858925,184.082847569629,479.9380746630129,96.60480741107993,416.23090153303,58.64404602377083C348.86323505073057,18.502131276798302,261.93793281208167,40.57373210992963,193.5410806939664,78.93577620505333C130.42746243093433,114.334589627462,98.30271207620316,179.96522072025542,76.75703585869454,249.04625023123273C51.97151888228291,328.5150500222984,13.704378332031375,421.85034740162234,66.52175969318436,486.19268352777647C119.04800174914682,550.1803526380478,217.28368757567262,524.383925680826,300,521.0016835830174"></path>
-                </svg>
-                <i class="bx bxl-dribbble"></i>
-              </div>
-              <h3>Понедельник</h3>
-              <h4 style = "color: blue">Площадка МТО</h4>
-                <h4 style = "color: blue">Космонавтов 50</h4>
-            </div>
-          </div>
-
-
-
-          <div class="col-lg-4 col-md-6 align-items-stretch mt-4 mt-md-0" data-aos="zoom-in" data-aos-delay="200" data-toggle="modal" data-target="#modal-tuesday">
-            <div class="icon-box iconbox-orange ">
-              <div class="icon">
-                <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
-                  <path stroke="none" stroke-width="0" fill="#f5f5f5" d="M300,582.0697525312426C382.5290701553225,586.8405444964366,449.9789794690241,525.3245884688669,502.5850820975895,461.55621195738473C556.606425686781,396.0723002908107,615.8543463187945,314.28637112970534,586.6730223649479,234.56875336149918C558.9533121215079,158.8439757836574,454.9685369536778,164.00468322053177,381.49747125262974,130.76875717737553C312.15926192815925,99.40240125094834,248.97055460311594,18.661163978235184,179.8680185752513,50.54337015887873C110.5421016452524,82.52863877960104,119.82277516462835,180.83849132639028,109.12597500060166,256.43424936330496C100.08760227029461,320.3096726198365,92.17705696193138,384.0621239912766,124.79988738764834,439.7174275375508C164.83382741302287,508.01625554203684,220.96474134820875,577.5009287672846,300,582.0697525312426"></path>
-                </svg>
-                <i class="bx bx-file"></i>
-              </div>
-              <h4>Вторник</h4>
-              <h4 style = "color: red">Площадка ЭТО</h4>
-                <h4 style = "color: red">Ясная 5</h4>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 align-items-stretch mt-4 mt-lg-0" data-aos="zoom-in" data-aos-delay="300" data-toggle="modal" data-target="#modal-wednesday">
-            <div class="icon-box iconbox-pink">
-              <div class="icon">
-                <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
-                  <path stroke="none" stroke-width="0" fill="#f5f5f5" d="M300,541.5067337569781C382.14930387511276,545.0595476570109,479.8736841581634,548.3450877840088,526.4010558755058,480.5488172755941C571.5218469581645,414.80211281144784,517.5187510058486,332.0715597781072,496.52539010469104,255.14436215662573C477.37192572678356,184.95920475031193,473.57363656557914,105.61284051026155,413.0603344069578,65.22779650032875C343.27470386102294,18.654635553484475,251.2091493199835,5.337323636656869,175.0934190732945,40.62881213300186C97.87086631185822,76.43348514350839,51.98124368387456,156.15599469081315,36.44837278890362,239.84606092416172C21.716077023791087,319.22268207091537,43.775223500013084,401.1760424656574,96.891909868211,461.97329694683043C147.22146801428983,519.5804099606455,223.5754009179313,538.201503339737,300,541.5067337569781"></path>
-                </svg>
-                <i class="bx bx-tachometer"></i>
-              </div>
-              <h4>Среда</h4>
-             <h4 style = "color: blue">Площадка МТО</h4>
-                <h4 style = "color: blue">Космонавтов 50</h4>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="100" data-toggle="modal" data-target="#modal-thursday">
-            <div class="icon-box iconbox-yellow">
-              <div class="icon">
-                <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
-                  <path stroke="none" stroke-width="0" fill="#f5f5f5" d="M300,503.46388370962813C374.79870501325706,506.71871716319447,464.8034551963731,527.1746412648533,510.4981551193396,467.86667711651364C555.9287308511215,408.9015244558933,512.6030010748507,327.5744911775523,490.211057578863,256.5855673507754C471.097692560561,195.9906835881958,447.69079081568157,138.11976852964426,395.19560036434837,102.3242989838813C329.3053358748298,57.3949838291264,248.02791733380457,8.279543830951368,175.87071277845988,42.242879143198664C103.41431057327972,76.34704239035025,93.79494320519305,170.9812938413882,81.28167332365135,250.07896920659033C70.17666984294237,320.27484674793965,64.84698225790005,396.69656628748305,111.28512138212992,450.4950937839243C156.20124167950087,502.5303643271138,231.32542653798444,500.4755392045468,300,503.46388370962813"></path>
-                </svg>
-                <i class="bx bx-layer"></i>
-              </div>
-              <h4>Четверг</h4>
-              <h4 style = "color: purple">Площадка ЭТО</h4>
-                <h4 style = "color: purple">Декбристов 58</h4>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="200" data-toggle="modal" data-target="#modal-friday">
-            <div class="icon-box iconbox-red">
-              <div class="icon">
-                <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
-                  <path stroke="none" stroke-width="0" fill="#f5f5f5" d="M300,532.3542879108572C369.38199826031484,532.3153073249985,429.10787420159085,491.63046689027357,474.5244479745417,439.17860296908856C522.8885846962883,383.3225815378663,569.1668002868075,314.3205725914397,550.7432151929288,242.7694973846089C532.6665558377875,172.5657663291529,456.2379748765914,142.6223662098291,390.3689995646985,112.34683881706744C326.66090330228417,83.06452184765237,258.84405631176094,53.51806209861945,193.32584062364296,78.48882559362697C121.61183558270385,105.82097193414197,62.805066853699245,167.19869350419734,48.57481801355237,242.6138429142374C34.843463184063346,315.3850353017275,76.69343916112496,383.4422959591041,125.22947124332185,439.3748458443577C170.7312796277747,491.8107796887764,230.57421082200815,532.3932930995766,300,532.3542879108572"></path>
-                </svg>
-                <i class="bx bx-slideshow"></i>
-              </div>
-              <h4>Пятница</h4>
-              <h4 style = "color: red">Площадка ЭТО</h4>
-                <h4 style = "color: red">Ясная 5</h4>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 align-items-stretch mt-4 " data-aos="zoom-in" data-aos-delay="300" data-toggle="modal" data-target="#modal-saturday">
-            <div class="icon-box iconbox-teal">
-              <div class="icon">
-                <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
-                  <path stroke="none" stroke-width="0" fill="#f5f5f5" d="M300,566.797414625762C385.7384707136149,576.1784315230908,478.7894351017131,552.8928747891023,531.9192734346935,484.94944893311C584.6109503024035,417.5663521118492,582.489472248146,322.67544863468447,553.9536738515405,242.03673114598146C529.1557734026468,171.96086150256528,465.24506316201064,127.66468636344209,395.9583748389544,100.7403814666027C334.2173773831606,76.7482773500951,269.4350130405921,84.62216499799875,207.1952322260088,107.2889140133804C132.92018162631612,134.33871894543012,41.79353780512637,160.00259165414826,22.644507872594943,236.69541883565114C3.319112789854554,314.0945973066697,72.72355303640163,379.243833228382,124.04198916343866,440.3218312028393C172.9286146004772,498.5055451809895,224.45579914871206,558.5317968840102,300,566.797414625762"></path>
-                </svg>
-                <i class="bx bx-arch"></i>
-              </div>
-              <h4>Суббота</h4>
-              <h4 style = "color: green">ДО</h4>
-            </div>
-          </div>
-
-        </div>
-
-      </div>
     </section><!-- End Services Section -->
-      <section id="homeworks" class="homeworks">
-  <div class="container" data-aos="fade-up">
-    <div class="section-title">
-      <h2>Домашнее задание</h2>
-      <p>Студенты могут просмотреть домашнее задание</p>
-    </div>
-      <div class="homework-container">
+    <section id="homeworks" class="homeworks">
+        <div class="container" data-aos="fade-up">
+            <div class="section-title">
+                <h2>Домашнее задание</h2>
+                <p>Студенты могут просмотреть домашнее задание</p>
+            </div>
+            <div class="homework-container">
 
-    <div class="homework-group group145" data-toggle="modal" data-target="#group145Modal">
-      <h3>145-ХК</h3>
-    </div>
+                <div class="homework-group group145" data-toggle="modal" data-target="#group145Modal">
+                    <h3>145-ХК</h3>
+                </div>
 
-    <div class="homework-group group147" data-toggle="modal" data-target="#group147Modal">
-      <h3>147-ПСА</h3>
-    </div>
-      <div class="homework-group group149" data-toggle="modal" data-target="#group149Modal">
-      <h3>149-ПОД</h3>
-    </div>
-      <div class="homework-group group232" data-toggle="modal" data-target="#group232Modal" >
-      <h3>232-Б</h3>
-    </div>
-      <div class="homework-group group243" data-toggle="modal" data-target="#group243Modal">
-      <h3>243-ИСП СИС</h3>
-    </div>
+                <div class="homework-group group147" data-toggle="modal" data-target="#group147Modal">
+                    <h3>147-ПСА</h3>
+                </div>
+                <div class="homework-group group149" data-toggle="modal" data-target="#group149Modal">
+                    <h3>149-ПОД</h3>
+                </div>
+                <div class="homework-group group232" data-toggle="modal" data-target="#group232Modal">
+                    <h3>232-Б</h3>
+                </div>
+                <div class="homework-group group243" data-toggle="modal" data-target="#group243Modal">
+                    <h3>243-ИСП СИС</h3>
+                </div>
                 <div class="homework-group group244" data-toggle="modal" data-target="#group244Modal">
-      <h3>244-ИСП-СИС</h3>
-    </div>
-          </div>
-  </div>
-          <!-- Modal for 145-ХК -->
-<div class="modal fade " id="group145Modal" tabindex="-1" role="dialog" aria-labelledby="group145ModalLabel" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content ">
-      <div class="modal-header">
-        <h5 class="modal-title" id="group145ModalLabel">145-ХК</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-tabs">
-        <button class="past-homework-tab">Прошлое</button>
-        <button class="current-homework-tab active">Текущее</button>
-      </div>
-      <div class="modal-body">
-        <div class="past-homework-content">
-          <p>№1065, 1067 стр. 322, Алимов Ш. А. Алгебра</p>
+                    <h3>244-ИСП-СИС</h3>
+                </div>
+            </div>
         </div>
-          <div class="current-homework-content">
-         <p> №1076, 1077 стр. 326, Алимов Ш. А. Алгебра</p>
+        <!-- Modal for 145-ХК -->
+        <div class="modal fade " id="group145Modal" tabindex="-1" role="dialog" aria-labelledby="group145ModalLabel"
+             aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content ">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="group145ModalLabel">145-ХК</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-tabs">
+                        <button class="past-homework-tab">Прошлое</button>
+                        <button class="current-homework-tab active">Текущее</button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="past-homework-content">
+                            <p>№1065, 1067 стр. 322, Алимов Ш. А. Алгебра</p>
+                        </div>
+                        <div class="current-homework-content">
+                            <p> №1076, 1077 стр. 326, Алимов Ш. А. Алгебра</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
-  </div>
-</div>
 
 
-       <!-- Modal for 147-ПСА -->
-<div class="modal fade" id="group147Modal" tabindex="-1" role="dialog" aria-labelledby="group147ModalLabel" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="group147ModalLabel">147-ПСА</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-tabs">
-        <button class="past-homework-tab">Прошлое</button>
-        <button class="current-homework-tab active">Текущее</button>
-      </div>
-      <div class="modal-body">
-        <div class="past-homework-content">
-          <p></p>
+        <!-- Modal for 147-ПСА -->
+        <div class="modal fade" id="group147Modal" tabindex="-1" role="dialog" aria-labelledby="group147ModalLabel"
+             aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="group147ModalLabel">147-ПСА</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-tabs">
+                        <button class="past-homework-tab">Прошлое</button>
+                        <button class="current-homework-tab active">Текущее</button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="past-homework-content">
+                            <p></p>
+                        </div>
+                        <div class="current-homework-content">
+                            <p></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="current-homework-content">
-          <p></p>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
 
-           <!-- Modal for 149-ПОД -->
-    <div class="modal fade" id="group149Modal" tabindex="-1" role="dialog" aria-labelledby="group149ModalLabel" aria-hidden="true">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="group149ModalLabel">149-ПОД</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="modal-tabs">
-        <button class="past-homework-tab">Прошлое</button>
-        <button class="current-homework-tab active">Текущее</button>
-      </div>
-      <div class="modal-body">
-        <div class="past-homework-content">
-          <p>Значок номер1219, 1220 стр.384, Алимов Ш. А. Алгебра</p>
+        <!-- Modal for 149-ПОД -->
+        <div class="modal fade" id="group149Modal" tabindex="-1" role="dialog" aria-labelledby="group149ModalLabel"
+             aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="group149ModalLabel">149-ПОД</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-tabs">
+                        <button class="past-homework-tab">Прошлое</button>
+                        <button class="current-homework-tab active">Текущее</button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="past-homework-content">
+                            <p>Значок номер1219, 1220 стр.384, Алимов Ш. А. Алгебра</p>
+                        </div>
+                        <div class="current-homework-content">
+                            <p>Текущее №793 стр. 238, №833-835(2,4) стр.249, Алимов Ш. А. Алгебра</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-          <div class="current-homework-content">
-         <p>Текущее №793 стр. 238, №833-835(2,4) стр.249, Алимов Ш. А. Алгебра</p>
+        <!-- Modal for 232-Б -->
+        <div class="modal fade" id="group232Modal" tabindex="-1" role="dialog" aria-labelledby="group232ModalLabel"
+             aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="group232ModalLabel">232-Б</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-tabs">
+                        <button class="past-homework-tab">Прошлое</button>
+                        <button class="current-homework-tab active">Текущее</button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="past-homework-content">
+                            <p></p>
+                        </div>
+                        <div class="current-homework-content">
+                            <p></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
-  </div>
-</div>
-           <!-- Modal for 232-Б -->
-    <div class="modal fade" id="group232Modal" tabindex="-1" role="dialog" aria-labelledby="group232ModalLabel" aria-hidden="true">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="group232ModalLabel">232-Б</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-      <div class="modal-tabs">
-        <button class="past-homework-tab">Прошлое</button>
-        <button class="current-homework-tab active">Текущее</button>
-      </div>
-      <div class="modal-body">
-        <div class="past-homework-content">
-          <p></p>
+        <!-- Modal for 243-ИСП СИС -->
+        <div class="modal fade" id="group243Modal" tabindex="-1" role="dialog" aria-labelledby="group243ModalLabel"
+             aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="group243ModalLabel">243-ИСП СИС</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-tabs">
+                        <button class="past-homework-tab">Прошлое</button>
+                        <button class="current-homework-tab active">Текущее</button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="past-homework-content">
+                            <p></p>
+                        </div>
+                        <div class="current-homework-content">
+                            <p></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="current-homework-content">
-          <p></p>
+        <!-- Modal for 244-ИСП СИС -->
+        <div class="modal fade" id="group244Modal" tabindex="-1" role="dialog" aria-labelledby="group244ModalLabel"
+             aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="group244ModalLabel">244-ИСП СИС</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-tabs">
+                        <button class="past-homework-tab">Прошлое</button>
+                        <button class="current-homework-tab active">Текущее</button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="past-homework-content">
+                            <p></p>
+                        </div>
+                        <div class="current-homework-content">
+                            <p></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
-  </div>
-</div>
-           <!-- Modal for 243-ИСП СИС -->
-    <div class="modal fade" id="group243Modal" tabindex="-1" role="dialog" aria-labelledby="group243ModalLabel" aria-hidden="true">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="group243ModalLabel">243-ИСП СИС</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-      <div class="modal-tabs">
-        <button class="past-homework-tab">Прошлое</button>
-        <button class="current-homework-tab active">Текущее</button>
-      </div>
-      <div class="modal-body">
-        <div class="past-homework-content">
-          <p></p>
-        </div>
-        <div class="current-homework-content">
-          <p></p>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-           <!-- Modal for 244-ИСП СИС -->
-    <div class="modal fade" id="group244Modal" tabindex="-1" role="dialog" aria-labelledby="group244ModalLabel" aria-hidden="true">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="group244ModalLabel">244-ИСП СИС</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-      <div class="modal-tabs">
-        <button class="past-homework-tab">Прошлое</button>
-        <button class="current-homework-tab active">Текущее</button>
-      </div>
-      <div class="modal-body">
-        <div class="past-homework-content">
-          <p></p>
-        </div>
-        <div class="current-homework-content">
-          <p></p>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-</section>
-
-
-
-
+    </section>
 
 
     <!-- ======= Testimonials Section ======= -->
     <section id="testimonials" class="testimonials section-bg">
-      <div class="container" data-aos="fade-up">
+        <div class="container" data-aos="fade-up">
 
-        <div class="section-title">
-          <h2>Студенты</h2>
-        </div>
-
-        <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
-          <div class="swiper-wrapper">
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <img src="{% static 'dzeApp/img/students/woman.jpg' %}" class="testimonial-img" alt="">
-                <h3>Зверева Ксения Евгеньевна</h3>
-                <h4>234-ПСО</h4>
-                <p>
-                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                  Самый лучший преподаватель, поддержит любую (даже не самую лучшую) идею студента!!!
-                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                </p>
-              </div>
-            </div><!-- End testimonial item -->
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <img src="{% static 'dzeApp/img/students/232b.jpg' %}" class="testimonial-img" alt="">
-                <h3>Кочкина Ксения</h3>
-                <h4>232-Б</h4>
-                <p>
-                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                   С учётом того, что пар у нас прошло не много и ещё не успели до конца познакомиться, могу смело сказать, что Анна Сергеевна хороший и компетентный преподаватель! Материал всегда объясняет доступно и понятно, а если выходишь к доске и запутался в расчетах, то она поможет и объяснит ещё раз.
-                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                </p>
-              </div>
-            </div><!-- End testimonial item -->
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <img src="{% static 'dzeApp/img/students/aleksey.jpg' %}" class="testimonial-img" alt="">
-                <h3>Алексей</h3>
-                <h4>Студент 234 - ПСО</h4>
-                <p>
-                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                  Профессионал своего дела, отличный педагог и замечательный человек..
-                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                </p>
-              </div>
-            </div><!-- End testimonial item -->
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <img src="{% static 'dzeApp/img/students/marina.jpg' %}" class="testimonial-img" alt="">
-                <h3>Марина</h3>
-                <h4></h4>
-                <p>
-                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                  Самый хороший преподаватель, которая очень понятно и доступно объясняет темы
-                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                </p>
-              </div>
-            </div><!-- End testimonial item -->
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <img src="{% static 'dzeApp/img/students/franke.jpg' %}" class="testimonial-img" alt="">
-                <h3>Вячеслав</h3>
-                <h4>332 ОСА</h4>
-                <p>
-                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                  Добрый,понимающий педагог
-                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                </p>
-              </div>
+            <div class="section-title">
+                <h2>Студенты</h2>
             </div>
-              <div class="swiper-slide">
-              <div class="testimonial-item">
-                <img src="{% static 'dzeApp/img/students/anna.jpg' %}" class="testimonial-img" alt="">
-                <h3>Бердюгина Анна</h3>
-                <h4>147 ПСА</h4>
-                <p>
-                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                   Анна Сергеевна отличный преподаватель, все понятно объясняет , иногда шутит!
-                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                </p>
-              </div>
-            </div><!-- End testimonial item -->
 
-          </div>
-          <div class="swiper-pagination"></div>
+            <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
+                <div class="swiper-wrapper">
+
+                    <div class="swiper-slide">
+                        <div class="testimonial-item">
+                            <img src="{% static 'dzeApp/img/students/woman.jpg' %}" class="testimonial-img" alt="">
+                            <h3>Зверева Ксения Евгеньевна</h3>
+                            <h4>234-ПСО</h4>
+                            <p>
+                                <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                                Самый лучший преподаватель, поддержит любую (даже не самую лучшую) идею студента!!!
+                                <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                            </p>
+                        </div>
+                    </div><!-- End testimonial item -->
+
+                    <div class="swiper-slide">
+                        <div class="testimonial-item">
+                            <img src="{% static 'dzeApp/img/students/232b.jpg' %}" class="testimonial-img" alt="">
+                            <h3>Кочкина Ксения</h3>
+                            <h4>232-Б</h4>
+                            <p>
+                                <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                                С учётом того, что пар у нас прошло не много и ещё не успели до конца познакомиться,
+                                могу смело сказать, что Анна Сергеевна хороший и компетентный преподаватель! Материал
+                                всегда объясняет доступно и понятно, а если выходишь к доске и запутался в расчетах, то
+                                она поможет и объяснит ещё раз.
+                                <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                            </p>
+                        </div>
+                    </div><!-- End testimonial item -->
+
+                    <div class="swiper-slide">
+                        <div class="testimonial-item">
+                            <img src="{% static 'dzeApp/img/students/aleksey.jpg' %}" class="testimonial-img" alt="">
+                            <h3>Алексей</h3>
+                            <h4>Студент 234 - ПСО</h4>
+                            <p>
+                                <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                                Профессионал своего дела, отличный педагог и замечательный человек..
+                                <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                            </p>
+                        </div>
+                    </div><!-- End testimonial item -->
+
+                    <div class="swiper-slide">
+                        <div class="testimonial-item">
+                            <img src="{% static 'dzeApp/img/students/marina.jpg' %}" class="testimonial-img" alt="">
+                            <h3>Марина</h3>
+                            <h4></h4>
+                            <p>
+                                <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                                Самый хороший преподаватель, которая очень понятно и доступно объясняет темы
+                                <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                            </p>
+                        </div>
+                    </div><!-- End testimonial item -->
+
+                    <div class="swiper-slide">
+                        <div class="testimonial-item">
+                            <img src="{% static 'dzeApp/img/students/franke.jpg' %}" class="testimonial-img" alt="">
+                            <h3>Вячеслав</h3>
+                            <h4>332 ОСА</h4>
+                            <p>
+                                <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                                Добрый,понимающий педагог
+                                <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="testimonial-item">
+                            <img src="{% static 'dzeApp/img/students/anna.jpg' %}" class="testimonial-img" alt="">
+                            <h3>Бердюгина Анна</h3>
+                            <h4>147 ПСА</h4>
+                            <p>
+                                <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                                Анна Сергеевна отличный преподаватель, все понятно объясняет , иногда шутит!
+                                <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                            </p>
+                        </div>
+                    </div><!-- End testimonial item -->
+
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+            <div class="d-flex justify-content-around">
+                {% if is_authenticated %}
+                    <button class="btn btn-primary" data-toggle="modal" data-target="#commentModal">Оставить
+                        комментарий
+                    </button>
+                {% else %}
+                    <button class="btn btn-primary btn-sm">Для того, чтобы оставить комментарий войдите или
+                        зарегистрируйтесь
+                    </button>
+                {% endif %}
+            </div>
         </div>
-          <div class="d-flex justify-content-around">
-              <button class="btn btn-primary">Оставить комментарий</button>
-          </div>
-
-      </div>
     </section><!-- End Testimonials Section -->
+    <!-- ======= Comment modal ======= -->
+    <div class="modal" id="commentModal" tabindex="-1" role="dialog" aria-labelledby="commentModalLabel"
+         aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="commentModalLabel">Оставьте комментарий</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form action="{% url 'send_comment' %}" method="post">
+                        {% csrf_token %}
+                        <div class="form-group">
+                            <textarea class="form-control" id="message-text" name="message-text"></textarea>
+                        </div>
+                        <div>
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Закрыть
+                            </button>
+                            <button type="submit" class="btn btn-primary" id="commentModalButton">Отправить
+                            </button>
+                            <label class="btn btn-primary">
+                                Прикрепить фото <input type="file" name="photo" hidden>
+                            </label>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
 
     <!-- ======= Contact Section ======= -->
     <section id="contact" class="contact">
-      <div class="container" data-aos="fade-up">
+        <div class="container" data-aos="fade-up">
 
-        <div class="section-title">
-          <h2>Связаться</h2>
-        </div>
+            <div class="section-title">
+                <h2>Связаться</h2>
+            </div>
 
-        <div class="row mt-1">
+            <div class="row mt-1">
 
-          <div class="col-lg-4">
-            <div class="info">
-              <div class="address">
-                <i class="bi bi-geo-alt"></i>
-                <h4>Location:</h4>
-                <p>Russia, Yekaterinburg</p>
-              </div>
+                <div class="col-lg-4">
+                    <div class="info">
+                        <div class="address">
+                            <i class="bi bi-geo-alt"></i>
+                            <h4>Location:</h4>
+                            <p>Russia, Yekaterinburg</p>
+                        </div>
 
-              <div class="email">
-                <i class="bi bi-envelope"></i>
-                <h4>Email:</h4>
-                <p>levanidzeanna@gmail.com</p>
-              </div>
+                        <div class="email">
+                            <i class="bi bi-envelope"></i>
+                            <h4>Email:</h4>
+                            <p>levanidzeanna@gmail.com</p>
+                        </div>
 
+
+                    </div>
+
+                </div>
+
+                <div class="col-lg-8 mt-5 mt-lg-0">
+
+                    <form action="{% url 'send_email' %}" method="post" id="email-form" enctype="multipart/form-data">
+                        {% csrf_token %}
+                        <div class="row">
+                            <div class="col-md-6 form-group">
+                                <input type="text" name="name" class="form-control" id="name" placeholder="Ваше имя"
+                                       required>
+                            </div>
+                            <div class="col-md-6 form-group mt-3 mt-md-0">
+                                <input type="email" class="form-control" name="email" id="email" placeholder="Email"
+                                       required>
+                            </div>
+                        </div>
+                        <div class="form-group mt-3">
+                            <input type="text" class="form-control" name="subject" id="subject" placeholder="Тема"
+                                   required>
+                        </div>
+                        <div class="form-group mt-3">
+                            <textarea class="form-control" name="message" rows="5"
+                                      placeholder="Напишите здесь свое сообщение, вы также можете прикрепить файл"
+                                      required> </textarea>
+                        </div>
+                         <label class="buttonDownload">
+                                Прикрепить файл <input type="file" name="attach" hidden>
+                            </label>
+                        <div class="my-3">
+                        </div>
+                        <div class="text-center">
+                            <button type="submit" class="btn btn-primary" id="send-email-btn">Отправить сообщение
+                            </button>
+                        </div>
+                    </form>
+                    <div id="message"></div>
+                </div>
 
             </div>
 
-          </div>
-
-          <div class="col-lg-8 mt-5 mt-lg-0">
-
-            <form action="{% url 'send_email' %}" method="post" id="email-form" enctype="multipart/form-data" >
-                  {% csrf_token %}
-              <div class="row">
-                <div class="col-md-6 form-group">
-                  <input type="text" name="name" class="form-control" id="name" placeholder="Ваше имя" required>
-                </div>
-                <div class="col-md-6 form-group mt-3 mt-md-0">
-                  <input type="email" class="form-control" name="email" id="email" placeholder="Email" required>
-                </div>
-              </div>
-              <div class="form-group mt-3">
-                <input type="text" class="form-control" name="subject" id="subject" placeholder="Тема" required>
-              </div>
-              <div class="form-group mt-3">
-                <textarea class="form-control" name="message" rows="5" placeholder="Напишите здесь свое сообщение, вы также можете прикрепить файл" required> </textarea>
-                <label class="btn btn-primary">
-                Прикрепить файл <input type="file" name="attach" hidden>
-                </label>
-              </div>
-              <div class="my-3">
-              </div>
-              <div class="text-center"><button type="submit" class="btn btn-primary" id="send-email-btn" >Отправить сообщение</button></div>
-            </form>
-              <div id="message"></div>
-
-          </div>
-
         </div>
-
-      </div>
     </section><!-- End Contact Section -->
 
-  </main><!-- End #main -->
+</main><!-- End #main -->
 
-  <!-- ======= Footer ======= -->
-  <footer id="footer">
+<!-- ======= Footer ======= -->
+<footer id="footer">
     <div class="container">
-      <h3>Леванидзе Анна Сергеевна</h3>
-      <p></p>
-      <div class="social-links">
-       <a href="https://t.me/+79221822774" class="telegram"><i class="bx bxl-telegram"></i></a>
-        <a href="https://vk.com/a.levanidze" class="vk"><i class="bx bxl-vk"></i></a>
-        <a href="https://discordapp.com/users/766218054350405642" class="discord"><i class="bx bx bxl-discord"></i></a>
-        <a href="https://wa.me/79221822774" class="whatsapp"><i class="bx bxl-whatsapp"></i></a>
-        <a href="http://eetk.ru/" class="linkedin"><i class="bx bxs-briefcase"></i></a>
-      </div>
+        <h3>Леванидзе Анна Сергеевна</h3>
+        <p></p>
+        <div class="social-links">
+            <a href="https://t.me/+79221822774" class="telegram"><i class="bx bxl-telegram"></i></a>
+            <a href="https://vk.com/a.levanidze" class="vk"><i class="bx bxl-vk"></i></a>
+            <a href="https://discordapp.com/users/766218054350405642" class="discord"><i class="bx bx bxl-discord"></i></a>
+            <a href="https://wa.me/79221822774" class="whatsapp"><i class="bx bxl-whatsapp"></i></a>
+            <a href="http://eetk.ru/" class="linkedin"><i class="bx bxs-briefcase"></i></a>
+        </div>
     </div>
-  </footer><!-- End Footer -->
+</footer><!-- End Footer -->
 
-  <div id="preloader"></div>
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+<div id="preloader"></div>
+<a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+        class="bi bi-arrow-up-short"></i></a>
 
-  <!-- Vendor JS Files -->
-  <script src="{% static 'dzeApp/vendor/purecounter/purecounter_vanilla.js' %}"></script>
-  <script src="{% static 'dzeApp/vendor/aos/aos.js' %}"></script>
-  <script src="{% static 'dzeApp/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
-  <script src="{% static 'dzeApp/vendor/glightbox/js/glightbox.min.js' %}"></script>
-  <script src="{% static 'dzeApp/vendor/isotope-layout/isotope.pkgd.min.js' %}"></script>
-  <script src="{% static 'dzeApp/vendor/swiper/swiper-bundle.min.js' %}"></script>
-  <script src="{% static 'dzeApp/vendor/typed.js/typed.min.js' %}"></script>
-  <script src="{% static 'dzeApp/vendor/waypoints/noframework.waypoints.js' %}"></script>
-  <script src="{% static 'dzeApp/vendor/php-email-form/validate.js' %}"></script>
+<!-- Vendor JS Files -->
+<script src="{% static 'dzeApp/vendor/purecounter/purecounter_vanilla.js' %}"></script>
+<script src="{% static 'dzeApp/vendor/aos/aos.js' %}"></script>
+<script src="{% static 'dzeApp/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+<script src="{% static 'dzeApp/vendor/glightbox/js/glightbox.min.js' %}"></script>
+<script src="{% static 'dzeApp/vendor/isotope-layout/isotope.pkgd.min.js' %}"></script>
+<script src="{% static 'dzeApp/vendor/swiper/swiper-bundle.min.js' %}"></script>
+<script src="{% static 'dzeApp/vendor/typed.js/typed.min.js' %}"></script>
+<script src="{% static 'dzeApp/vendor/waypoints/noframework.waypoints.js' %}"></script>
+<script src="{% static 'dzeApp/vendor/php-email-form/validate.js' %}"></script>
 
-  <!-- Template Main JS File -->
-  <script src="{% static 'dzeApp/js/main.js' %}"></script>
+<!-- Template Main JS File -->
+<script src="{% static 'dzeApp/js/main.js' %}"></script>
 
 
-  <div class="modal fade" id="modal-monday" tabindex="-1" role="dialog" aria-labelledby="modalLabel1" aria-hidden="true" >
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="modalLabel1">Расписание</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        <h3>8:30 - 11:50 - Аудитория 405</h3>
-          <h3>12:50 - 17:00 - Кабинет 110</h3>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Закрыть</button>
-      </div>
+<div class="modal fade" id="modal-monday" tabindex="-1" role="dialog" aria-labelledby="modalLabel1" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="modalLabel1">Расписание</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <h3>8:30 - 11:50 - Аудитория 405</h3>
+                <h3>12:50 - 17:00 - Кабинет 110</h3>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Закрыть</button>
+            </div>
+        </div>
     </div>
-  </div>
-  </div>
-
-
-
-
-<div class="modal fade" id="modal-tuesday" tabindex="-1" role="dialog" aria-labelledby="modalLabel2" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="modalLabel2">Расписание</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        <h3>8:30 - 17:50 - Аудитория 57</h3>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Закрыть</button>
-      </div>
-    </div>
-  </div>
 </div>
 
 
-
-<div class="modal fade" id="modal-wednesday" tabindex="-1" role="dialog" aria-labelledby="modalLabel3" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="modalLabel3">Расписание</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        <h3>8:30 - 10:05 - Аудитория 212</h3>
-        <h3>10:15 - 12:50 - Кабинет 110</h3>
-        <h3>12:50 - 14:25 - Кабинет 101</h3>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Закрыть</button>
-      </div>
-    </div>
-  </div>
-  </div>
-
-
-
-
-
-<div class="modal fade" id="modal-thursday" tabindex="-1" role="dialog" aria-labelledby="modalLabel4" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="modalLabel4">Расписание</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-       <h3>8:30 - 16:10 - Аудитория 9</h3>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Закрыть</button>
-      </div>
-    </div>
-  </div>
-  </div>
-          <div class="modal fade" id="modal-friday" tabindex="-1" role="dialog" aria-labelledby="mModalLabel5" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="modalLabel5">Расписание</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        <h3>8:30 - 16:10 - Аудитория 45</h3>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Закрыть</button>
-      </div>
-    </div>
-  </div>
+<div class="modal fade" id="modal-tuesday" tabindex="-1" role="dialog" aria-labelledby="modalLabel2" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="modalLabel2">Расписание</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
             </div>
-            <div class="modal fade" id="modal-saturday" tabindex="-1" role="dialog" aria-labelledby="modalLabel6" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="modalLabe6">Расписание</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        <h3>10:15 - 16:10 - ДО</h3>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Закрыть</button>
-      </div>
+            <div class="modal-body">
+                <h3>8:30 - 17:50 - Аудитория 57</h3>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Закрыть</button>
+            </div>
+        </div>
     </div>
-  </div>
-              </div>
+</div>
+
+
+<div class="modal fade" id="modal-wednesday" tabindex="-1" role="dialog" aria-labelledby="modalLabel3"
+     aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="modalLabel3">Расписание</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <h3>8:30 - 10:05 - Аудитория 212</h3>
+                <h3>10:15 - 12:50 - Кабинет 110</h3>
+                <h3>12:50 - 14:25 - Кабинет 101</h3>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Закрыть</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="modal fade" id="modal-thursday" tabindex="-1" role="dialog" aria-labelledby="modalLabel4"
+     aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="modalLabel4">Расписание</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <h3>8:30 - 16:10 - Аудитория 9</h3>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Закрыть</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="modal-friday" tabindex="-1" role="dialog" aria-labelledby="mModalLabel5" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="modalLabel5">Расписание</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <h3>8:30 - 16:10 - Аудитория 45</h3>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Закрыть</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="modal-saturday" tabindex="-1" role="dialog" aria-labelledby="modalLabel6"
+     aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="modalLabe6">Расписание</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <h3>10:15 - 16:10 - ДО</h3>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Закрыть</button>
+            </div>
+        </div>
+    </div>
+</div>
 
 </body>
 </html>
