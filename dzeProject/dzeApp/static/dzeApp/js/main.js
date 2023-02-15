@@ -308,6 +308,11 @@ $(document).ready(function(){
     $("#registerModal").modal("show");
   });
 });
+$(document).ready(function(){
+  $("#regClose").click(function(){
+    $("#registerModal").modal("hide");
+  });
+});
 $(document).ready(function() {
   $('#register-form').submit(function (event) {
     event.preventDefault();
