@@ -92,27 +92,27 @@
 <main id="main">
 
     {% if is_authenticated %}
-        <!-- Top buttons start -->
-        <div class="top-buttons">
+    <!-- Top buttons start -->
+    <div class="top-buttons">
 
-            <form action="{% url 'logout' %}" method="post">
-                {% csrf_token %}
-                <button class="btn btn-secondary btn-sm" id="logoutBtn" type="submit">
-                    <i class="glyphicon glyphicon-user"></i> Выйти
-                </button>
-            </form>
-        </div>
-        <!-- Top buttons end -->
+        <form action="{% url 'logout' %}" method="post">
+            {% csrf_token %}
+            <button class="btn btn-secondary btn-sm" id="logoutBtn" type="submit">
+                <i class="glyphicon glyphicon-user"></i> Выйти
+            </button>
+        </form>
+    </div>
+    <!-- Top buttons end -->
     {% else %}
 
-        <div class="top-buttons">
-            <button class="btn btn-secondary btn-sm" data-toggle="modal" data-target="#registerModal" id="regBtn">
-                <i class="glyphicon glyphicon-user"></i> Зарегистрироваться
-            </button>
-            <button class="btn btn-secondary btn-sm" data-toggle="modal" data-target="#loginModal">
-                <i class="glyphicon glyphicon-log-in"></i> Войти
-            </button>
-        </div>
+    <div class="top-buttons">
+        <button class="btn btn-secondary btn-sm" data-toggle="modal" data-target="#registerModal" id="regBtn">
+            <i class="glyphicon glyphicon-user"></i> Зарегистрироваться
+        </button>
+        <button class="btn btn-secondary btn-sm" data-toggle="modal" data-target="#loginModal">
+            <i class="glyphicon glyphicon-log-in"></i> Войти
+        </button>
+    </div>
     {% endif %}
 
 
@@ -893,9 +893,9 @@
                             <i class="bx bx-layer"></i>
                         </div>
                         <h4>Четверг</h4>
-                        {#                        <h4 style="color: purple">Площадка ЭТО</h4>#}
-                        {#                        <h4 style="color: purple">Декбристов 58</h4>#}
-                        <h4 style="color: purple">Нерабочий день</h4>
+                        <h4 style="color: purple">Площадка ЭТО</h4>
+                        <h4 style="color: purple">Декбристов 58</h4>
+
                     </div>
                 </div>
 
@@ -910,9 +910,9 @@
                             <i class="bx bx-slideshow"></i>
                         </div>
                         <h4>Пятница</h4>
-{#                        <h4 style="color: red">Площадка ЭТО</h4>#}
-{#                        <h4 style="color: red">Ясная 5</h4>#}
-                        <h4 style="color: purple">Нерабочий день</h4>
+                        <h4 style="color: red">Площадка ЭТО</h4>
+                        <h4 style="color: red">Ясная 5</h4>
+
                     </div>
                 </div>
 
@@ -1225,13 +1225,13 @@
             </div>
             <div class="d-flex justify-content-around">
                 {% if is_authenticated %}
-                    <button class="btn btn-primary" data-toggle="modal" data-target="#commentModal">Оставить
-                        комментарий
-                    </button>
+                <button class="btn btn-primary" data-toggle="modal" data-target="#commentModal">Оставить
+                    комментарий
+                </button>
                 {% else %}
-                    <button class="btn btn-primary btn-sm">Для того, чтобы оставить комментарий войдите или
-                        зарегистрируйтесь
-                    </button>
+                <button class="btn btn-primary btn-sm">Для того, чтобы оставить комментарий войдите или
+                    зарегистрируйтесь
+                </button>
                 {% endif %}
             </div>
         </div>
@@ -1385,8 +1385,9 @@
                 </button>
             </div>
             <div class="modal-body">
-                <h3>8:30 - 11:50 - Аудитория 405</h3>
-                <h3>12:50 - 17:00 - Кабинет 110</h3>
+                <h3>8:30 - 10:05 - Кабинет 110</h3>
+                <h3>10:15 - 11:50 - Аудитория 106</h3>
+                <h3>12:50 - 17:00 - Кабинет 101</h3>
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Закрыть</button>
@@ -1406,7 +1407,8 @@
                 </button>
             </div>
             <div class="modal-body">
-                <h3>8:30 - 17:50 - Аудитория 57</h3>
+                <h3>8:30 - 11:50 - Аудитория 27</h3>
+                <h3>12:50 - 17:50 - Аудитория 36</h3>
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Закрыть</button>
@@ -1427,9 +1429,9 @@
                 </button>
             </div>
             <div class="modal-body">
-                <h3>8:30 - 10:05 - Аудитория 212</h3>
-                <h3>10:15 - 12:50 - Кабинет 110</h3>
-                <h3>12:50 - 14:25 - Кабинет 101</h3>
+                <h3>8:30 - 10:05 - Кабинет 110</h3>
+                <h3>10:15 - 12:50 - Аудитория 101</h3>
+                <h3>12:50 - 14:25 - Аудитория 212</h3>
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Закрыть</button>
@@ -1450,7 +1452,7 @@
                 </button>
             </div>
             <div class="modal-body">
-                <h3>Выходной</h3>
+                <h3>8:30-17:50 Аудитория 45</h3>
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Закрыть</button>
@@ -1468,7 +1470,7 @@
                 </button>
             </div>
             <div class="modal-body">
-                <h3>Выходной</h3>
+                <h3>8:30-16:10 Аудитория 52</h3>
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Закрыть</button>
